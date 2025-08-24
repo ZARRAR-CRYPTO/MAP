@@ -1,0 +1,4432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eb8b0c2f97b473f23c03b697b01ac16d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_eb8b0c2f97b473f23c03b697b01ac16d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_eb8b0c2f97b473f23c03b697b01ac16d = L.map(
+                "map_eb8b0c2f97b473f23c03b697b01ac16d",
+                {
+                    center: [24.0, 67.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_eb8b0c2f97b473f23c03b697b01ac16d);
+
+            
+
+        
+    
+            var tile_layer_62d4ae7c39821e5ff23745cf7423c783 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_62d4ae7c39821e5ff23745cf7423c783.addTo(map_eb8b0c2f97b473f23c03b697b01ac16d);
+        
+    
+            var marker_cluster_337da4daddfda775bf889c83690950e7 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_ef84977162e1727b57e1d91413488966 = L.marker(
+                [25.105, 63.856],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_a2a17cf4ab87250593da393c951d9399 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb7758d727fbe7f8abd122cb9276a44d = $(`<div id="html_eb7758d727fbe7f8abd122cb9276a44d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Astola Island<br>         <b>Species:</b> Corals<br>         <b>Count:</b> 35.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Conservation and management of biodiversity in Pakistan through the establishment of marine protected areas</em>     </div>     </div>`)[0];
+                popup_a2a17cf4ab87250593da393c951d9399.setContent(html_eb7758d727fbe7f8abd122cb9276a44d);
+            
+        
+
+        marker_ef84977162e1727b57e1d91413488966.bindPopup(popup_a2a17cf4ab87250593da393c951d9399)
+        ;
+
+        
+    
+    
+            marker_ef84977162e1727b57e1d91413488966.bindTooltip(
+                `<div>
+                     Astola Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_32acb02b21db9fa94a439ff2e4269e60 = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_2b8ae9bba7651272bed71f9b1d1cceae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76683e52be5791c89a159bff85d188f1 = $(`<div id="html_76683e52be5791c89a159bff85d188f1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri area, Jiwani (South-West Pakistan coast)<br>         <b>Species:</b> Mollusca (Macrobenthic Populations)<br>         <b>Count:</b> 27.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_2b8ae9bba7651272bed71f9b1d1cceae.setContent(html_76683e52be5791c89a159bff85d188f1);
+            
+        
+
+        marker_32acb02b21db9fa94a439ff2e4269e60.bindPopup(popup_2b8ae9bba7651272bed71f9b1d1cceae)
+        ;
+
+        
+    
+    
+            marker_32acb02b21db9fa94a439ff2e4269e60.bindTooltip(
+                `<div>
+                     Bandri area, Jiwani (South-West Pakistan coast)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e3206db1d2c62c5bdcd4fb57a8c3241c = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_ac5f66fafcc649af813fc65179374d1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b6ef0cc0e155974d03dbfa60eb9def7 = $(`<div id="html_5b6ef0cc0e155974d03dbfa60eb9def7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri Beach (Both Stations)<br>         <b>Species:</b> Total Molluscan Species<br>         <b>Count:</b> 34.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_ac5f66fafcc649af813fc65179374d1f.setContent(html_5b6ef0cc0e155974d03dbfa60eb9def7);
+            
+        
+
+        marker_e3206db1d2c62c5bdcd4fb57a8c3241c.bindPopup(popup_ac5f66fafcc649af813fc65179374d1f)
+        ;
+
+        
+    
+    
+            marker_e3206db1d2c62c5bdcd4fb57a8c3241c.bindTooltip(
+                `<div>
+                     Bandri Beach (Both Stations)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2238178ffe5f76375d1db1bfc295eebf = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_e9983e65b3d637e051ed06c8e813e7a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_249331555ba73f9000dc8bd25d67a4d2 = $(`<div id="html_249331555ba73f9000dc8bd25d67a4d2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri beach of Jiwani, Balochistan, Pakistan<br>         <b>Species:</b> Macrobenthic Molluscan Assemblages<br>         <b>Count:</b> 34.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_e9983e65b3d637e051ed06c8e813e7a3.setContent(html_249331555ba73f9000dc8bd25d67a4d2);
+            
+        
+
+        marker_2238178ffe5f76375d1db1bfc295eebf.bindPopup(popup_e9983e65b3d637e051ed06c8e813e7a3)
+        ;
+
+        
+    
+    
+            marker_2238178ffe5f76375d1db1bfc295eebf.bindTooltip(
+                `<div>
+                     Bandri beach of Jiwani, Balochistan, Pakistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bdc667aa032245ffd2a5e38e494b2969 = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9cefa4e70830d26ebe1ab714efee5936 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ab96bc3c2eb65a216304d44ea28ed64 = $(`<div id="html_7ab96bc3c2eb65a216304d44ea28ed64" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri Beach, Jiwani (ST-I: Sandy muddy)<br>         <b>Species:</b> Macrobenthic Molluscs<br>         <b>Count:</b> 13.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_9cefa4e70830d26ebe1ab714efee5936.setContent(html_7ab96bc3c2eb65a216304d44ea28ed64);
+            
+        
+
+        marker_bdc667aa032245ffd2a5e38e494b2969.bindPopup(popup_9cefa4e70830d26ebe1ab714efee5936)
+        ;
+
+        
+    
+    
+            marker_bdc667aa032245ffd2a5e38e494b2969.bindTooltip(
+                `<div>
+                     Bandri Beach, Jiwani (ST-I: Sandy muddy)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a2cdd40298a2db75e5abcb47d90e0174 = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_f302f6d3e03833db32208d44dda8987e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb627ba504dde02503b213c97c5c1e0f = $(`<div id="html_bb627ba504dde02503b213c97c5c1e0f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri Beach, Jiwani (ST-II: Rocky)<br>         <b>Species:</b> Macrobenthic Molluscs<br>         <b>Count:</b> 31.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_f302f6d3e03833db32208d44dda8987e.setContent(html_bb627ba504dde02503b213c97c5c1e0f);
+            
+        
+
+        marker_a2cdd40298a2db75e5abcb47d90e0174.bindPopup(popup_f302f6d3e03833db32208d44dda8987e)
+        ;
+
+        
+    
+    
+            marker_a2cdd40298a2db75e5abcb47d90e0174.bindTooltip(
+                `<div>
+                     Bandri Beach, Jiwani (ST-II: Rocky)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c5de7f5fc4e9fcc9c0289c6ce3f6465 = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_48acb9a2142ad7e07c4e7aa955e80210 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5733b1ad2901ac3277a64fbbfa1c5277 = $(`<div id="html_5733b1ad2901ac3277a64fbbfa1c5277" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri Beach, Jiwani Coast, Pakistan<br>         <b>Species:</b> Bivalves<br>         <b>Count:</b> 7.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_48acb9a2142ad7e07c4e7aa955e80210.setContent(html_5733b1ad2901ac3277a64fbbfa1c5277);
+            
+        
+
+        marker_6c5de7f5fc4e9fcc9c0289c6ce3f6465.bindPopup(popup_48acb9a2142ad7e07c4e7aa955e80210)
+        ;
+
+        
+    
+    
+            marker_6c5de7f5fc4e9fcc9c0289c6ce3f6465.bindTooltip(
+                `<div>
+                     Bandri Beach, Jiwani Coast, Pakistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_991d915022d3f31e5418589600e6d916 = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_d1e760c50bfb5d3b036ccf44db718298 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be7802aa46a52081e3fdb405f4c410c3 = $(`<div id="html_be7802aa46a52081e3fdb405f4c410c3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri Beach, Jiwani Coast, Pakistan<br>         <b>Species:</b> Gastropods<br>         <b>Count:</b> 36.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_d1e760c50bfb5d3b036ccf44db718298.setContent(html_be7802aa46a52081e3fdb405f4c410c3);
+            
+        
+
+        marker_991d915022d3f31e5418589600e6d916.bindPopup(popup_d1e760c50bfb5d3b036ccf44db718298)
+        ;
+
+        
+    
+    
+            marker_991d915022d3f31e5418589600e6d916.bindTooltip(
+                `<div>
+                     Bandri Beach, Jiwani Coast, Pakistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0ca9a5597975a1b0d9ab72bb1f67400b = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_1dfe52acc4fa20eb14c0e7f95cdc1da7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3542c7ff9ba682ba16e638c09f4753a1 = $(`<div id="html_3542c7ff9ba682ba16e638c09f4753a1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Bandri Beach, Jiwani Coast, Pakistan<br>         <b>Species:</b> Polyplacophora<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_1dfe52acc4fa20eb14c0e7f95cdc1da7.setContent(html_3542c7ff9ba682ba16e638c09f4753a1);
+            
+        
+
+        marker_0ca9a5597975a1b0d9ab72bb1f67400b.bindPopup(popup_1dfe52acc4fa20eb14c0e7f95cdc1da7)
+        ;
+
+        
+    
+    
+            marker_0ca9a5597975a1b0d9ab72bb1f67400b.bindTooltip(
+                `<div>
+                     Bandri Beach, Jiwani Coast, Pakistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_45129b8d9790f2edaada7e96ca5949d6 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_1d4096ccc9f5495b916d88a76d27e290 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b60dd3b68405c83fe1f5f48bbacdbba0 = $(`<div id="html_b60dd3b68405c83fe1f5f48bbacdbba0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Bivalves<br>         <b>Count:</b> 12.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_1d4096ccc9f5495b916d88a76d27e290.setContent(html_b60dd3b68405c83fe1f5f48bbacdbba0);
+            
+        
+
+        marker_45129b8d9790f2edaada7e96ca5949d6.bindPopup(popup_1d4096ccc9f5495b916d88a76d27e290)
+        ;
+
+        
+    
+    
+            marker_45129b8d9790f2edaada7e96ca5949d6.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bdfc139fbaea5ed736b6b19f2c0f2d14 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_a8416fba4c98ff36880f2df28e0bdb58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2851c806968dd284edecf0f70f704b51 = $(`<div id="html_2851c806968dd284edecf0f70f704b51" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Gastropods (Dominant Category)<br>         <b>Count:</b> 54.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_a8416fba4c98ff36880f2df28e0bdb58.setContent(html_2851c806968dd284edecf0f70f704b51);
+            
+        
+
+        marker_bdfc139fbaea5ed736b6b19f2c0f2d14.bindPopup(popup_a8416fba4c98ff36880f2df28e0bdb58)
+        ;
+
+        
+    
+    
+            marker_bdfc139fbaea5ed736b6b19f2c0f2d14.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9f905e92d5a6249e96856acab2836802 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_867709c5878de185dece78c72afe872b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc27f21da543549a63fd273723cceb54 = $(`<div id="html_cc27f21da543549a63fd273723cceb54" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Total Molluscs<br>         <b>Count:</b> 68.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_867709c5878de185dece78c72afe872b.setContent(html_cc27f21da543549a63fd273723cceb54);
+            
+        
+
+        marker_9f905e92d5a6249e96856acab2836802.bindPopup(popup_867709c5878de185dece78c72afe872b)
+        ;
+
+        
+    
+    
+            marker_9f905e92d5a6249e96856acab2836802.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3039926112b725ed0b8c4ec903e541ce = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c273aac8935bf9f8d2844e5e156157ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eebb3e8ecd479575bb0b4ef00cd52f6a = $(`<div id="html_eebb3e8ecd479575bb0b4ef00cd52f6a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Green Seaweeds<br>         <b>Count:</b> 39.0<br>         <b>Year:</b> 2009<br>         <b>Study:</b> <em>Diversity of Green Seaweeds along the Coast of Karachi</em>     </div>     </div>`)[0];
+                popup_c273aac8935bf9f8d2844e5e156157ff.setContent(html_eebb3e8ecd479575bb0b4ef00cd52f6a);
+            
+        
+
+        marker_3039926112b725ed0b8c4ec903e541ce.bindPopup(popup_c273aac8935bf9f8d2844e5e156157ff)
+        ;
+
+        
+    
+    
+            marker_3039926112b725ed0b8c4ec903e541ce.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_71cce057cdb68e32c4f22239a0f8eb54 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_e8147e24edfc129d423679e580ccf49a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cba08424234b58ae599cddee5c3f1167 = $(`<div id="html_cba08424234b58ae599cddee5c3f1167" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Annelida<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_e8147e24edfc129d423679e580ccf49a.setContent(html_cba08424234b58ae599cddee5c3f1167);
+            
+        
+
+        marker_71cce057cdb68e32c4f22239a0f8eb54.bindPopup(popup_e8147e24edfc129d423679e580ccf49a)
+        ;
+
+        
+    
+    
+            marker_71cce057cdb68e32c4f22239a0f8eb54.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_681200e6e41992eec63e0c091ade3929 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_d426c066cd47a3cc82b04d7a58ca0ea9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d054dc7781262ca20bc843d056f3fcf = $(`<div id="html_1d054dc7781262ca20bc843d056f3fcf" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Arthropoda<br>         <b>Count:</b> 28.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_d426c066cd47a3cc82b04d7a58ca0ea9.setContent(html_1d054dc7781262ca20bc843d056f3fcf);
+            
+        
+
+        marker_681200e6e41992eec63e0c091ade3929.bindPopup(popup_d426c066cd47a3cc82b04d7a58ca0ea9)
+        ;
+
+        
+    
+    
+            marker_681200e6e41992eec63e0c091ade3929.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8bd612bb1da0fb6b3109479cc831877 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_dad65ccc274ff36b056e620e9d7cc17e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_689461a0549ecf69e94955869cb6cf35 = $(`<div id="html_689461a0549ecf69e94955869cb6cf35" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Ascidiacea (Colony)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_dad65ccc274ff36b056e620e9d7cc17e.setContent(html_689461a0549ecf69e94955869cb6cf35);
+            
+        
+
+        marker_c8bd612bb1da0fb6b3109479cc831877.bindPopup(popup_dad65ccc274ff36b056e620e9d7cc17e)
+        ;
+
+        
+    
+    
+            marker_c8bd612bb1da0fb6b3109479cc831877.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7329aa490ee7a99faf6952b1f150703b = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9886dfb900a884db3049b8a0a668c02a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9db3d2c60ec968eaf9e1fe27b40d4f52 = $(`<div id="html_9db3d2c60ec968eaf9e1fe27b40d4f52" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Cnidaria<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_9886dfb900a884db3049b8a0a668c02a.setContent(html_9db3d2c60ec968eaf9e1fe27b40d4f52);
+            
+        
+
+        marker_7329aa490ee7a99faf6952b1f150703b.bindPopup(popup_9886dfb900a884db3049b8a0a668c02a)
+        ;
+
+        
+    
+    
+            marker_7329aa490ee7a99faf6952b1f150703b.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d0fc01618df7cea924483bdfdc1a2b68 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9e7bc531f6af7d288dd19d35df74e47d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6fc370e0bb483a9e95ed6ade45a8375 = $(`<div id="html_a6fc370e0bb483a9e95ed6ade45a8375" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Echinodermata<br>         <b>Count:</b> 17.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_9e7bc531f6af7d288dd19d35df74e47d.setContent(html_a6fc370e0bb483a9e95ed6ade45a8375);
+            
+        
+
+        marker_d0fc01618df7cea924483bdfdc1a2b68.bindPopup(popup_9e7bc531f6af7d288dd19d35df74e47d)
+        ;
+
+        
+    
+    
+            marker_d0fc01618df7cea924483bdfdc1a2b68.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c16d2106b7a5ab116bf029ff5191d7d0 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_cffe602bb8bcc3821a2b7eb31b80599f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35e7e9aac82f3067ab87f50191fed533 = $(`<div id="html_35e7e9aac82f3067ab87f50191fed533" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Mollusca<br>         <b>Count:</b> 50.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_cffe602bb8bcc3821a2b7eb31b80599f.setContent(html_35e7e9aac82f3067ab87f50191fed533);
+            
+        
+
+        marker_c16d2106b7a5ab116bf029ff5191d7d0.bindPopup(popup_cffe602bb8bcc3821a2b7eb31b80599f)
+        ;
+
+        
+    
+    
+            marker_c16d2106b7a5ab116bf029ff5191d7d0.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1721dc34e8f605f54015a7fb12c14b4e = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_2031903cd32f5385428866cb14836d01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c9207cae23b55d838db78e3dea7540f = $(`<div id="html_1c9207cae23b55d838db78e3dea7540f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Nemertea<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_2031903cd32f5385428866cb14836d01.setContent(html_1c9207cae23b55d838db78e3dea7540f);
+            
+        
+
+        marker_1721dc34e8f605f54015a7fb12c14b4e.bindPopup(popup_2031903cd32f5385428866cb14836d01)
+        ;
+
+        
+    
+    
+            marker_1721dc34e8f605f54015a7fb12c14b4e.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7f78705d7ee150842983ded8e5751249 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_7bb771c1a34b3957dc815a9df823bf0c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_197e5c4eecf9ea9da96587122c7f72c2 = $(`<div id="html_197e5c4eecf9ea9da96587122c7f72c2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Pisces<br>         <b>Count:</b> 4.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_7bb771c1a34b3957dc815a9df823bf0c.setContent(html_197e5c4eecf9ea9da96587122c7f72c2);
+            
+        
+
+        marker_7f78705d7ee150842983ded8e5751249.bindPopup(popup_7bb771c1a34b3957dc815a9df823bf0c)
+        ;
+
+        
+    
+    
+            marker_7f78705d7ee150842983ded8e5751249.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a6a58d7d106f0e26a9846aede268919 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_51b876644c2bcef5f75dca6ba843211d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_400126ef9290fa7dcd8f0f5ef0929a74 = $(`<div id="html_400126ef9290fa7dcd8f0f5ef0929a74" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Platyhelminthes<br>         <b>Count:</b> 4.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_51b876644c2bcef5f75dca6ba843211d.setContent(html_400126ef9290fa7dcd8f0f5ef0929a74);
+            
+        
+
+        marker_4a6a58d7d106f0e26a9846aede268919.bindPopup(popup_51b876644c2bcef5f75dca6ba843211d)
+        ;
+
+        
+    
+    
+            marker_4a6a58d7d106f0e26a9846aede268919.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_569d472d327cc96d9e9fadac22405c49 = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_fd3b4ac51d712eb466fd8fb3fe61f6fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b11a04ff6304798a3916ff882208711 = $(`<div id="html_7b11a04ff6304798a3916ff882208711" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Porifera<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_fd3b4ac51d712eb466fd8fb3fe61f6fc.setContent(html_7b11a04ff6304798a3916ff882208711);
+            
+        
+
+        marker_569d472d327cc96d9e9fadac22405c49.bindPopup(popup_fd3b4ac51d712eb466fd8fb3fe61f6fc)
+        ;
+
+        
+    
+    
+            marker_569d472d327cc96d9e9fadac22405c49.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1ba115af5d96d292d52b88fc3b68392a = L.marker(
+                [24.846, 66.862],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_bb5197358841d3fc49a1ce2fbcd4a4bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1fe294c623c50c5cc9d86e1a737817a = $(`<div id="html_f1fe294c623c50c5cc9d86e1a737817a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Buleji (Karachi)<br>         <b>Species:</b> Marine Algae<br>         <b>Count:</b> 56.0<br>         <b>Year:</b> 2020<br>         <b>Study:</b> <em>DISTRIBUTION AND DIVERSITY OF MARINE ALGAE OF SINDH COASTAL AREA: ALPHA, BETA AND GAMMA DIVERSITY</em>     </div>     </div>`)[0];
+                popup_bb5197358841d3fc49a1ce2fbcd4a4bd.setContent(html_f1fe294c623c50c5cc9d86e1a737817a);
+            
+        
+
+        marker_1ba115af5d96d292d52b88fc3b68392a.bindPopup(popup_bb5197358841d3fc49a1ce2fbcd4a4bd)
+        ;
+
+        
+    
+    
+            marker_1ba115af5d96d292d52b88fc3b68392a.bindTooltip(
+                `<div>
+                     Buleji (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_26d1bb73203c1d7891e886aa085a1fa4 = L.marker(
+                [24.786, 66.69],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_207d8e48daf6693ae159430cb887e356 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f165d6572f8659482194a5421f7d4fb0 = $(`<div id="html_f165d6572f8659482194a5421f7d4fb0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Cape Monze<br>         <b>Species:</b> Total Molluscs<br>         <b>Count:</b> 57.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_207d8e48daf6693ae159430cb887e356.setContent(html_f165d6572f8659482194a5421f7d4fb0);
+            
+        
+
+        marker_26d1bb73203c1d7891e886aa085a1fa4.bindPopup(popup_207d8e48daf6693ae159430cb887e356)
+        ;
+
+        
+    
+    
+            marker_26d1bb73203c1d7891e886aa085a1fa4.bindTooltip(
+                `<div>
+                     Cape Monze
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60175dc97dd4aceb8a11c26a49fa188b = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_d1763bac35c69ea02c28919935e19cd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee9bc3d304e27f1042b1a32d9bee7006 = $(`<div id="html_ee9bc3d304e27f1042b1a32d9bee7006" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Gambierdiscus Australes (Dinoflagellate)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2007<br>         <b>Study:</b> <em>The occurrence of the ciguatera fish poisoning producing dinoflagellate genus Gambierdiscus in Pakistan waters</em>     </div>     </div>`)[0];
+                popup_d1763bac35c69ea02c28919935e19cd1.setContent(html_ee9bc3d304e27f1042b1a32d9bee7006);
+            
+        
+
+        marker_60175dc97dd4aceb8a11c26a49fa188b.bindPopup(popup_d1763bac35c69ea02c28919935e19cd1)
+        ;
+
+        
+    
+    
+            marker_60175dc97dd4aceb8a11c26a49fa188b.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3c32f8e35627db8b6a703ca9c8248f2a = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_b7834ae44d844cdb96cc5e9b87c97517 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3531ddfdbaf25139fa5366e585886023 = $(`<div id="html_3531ddfdbaf25139fa5366e585886023" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Gambierdiscus Polynesiensis (Dinoflagellate)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2007<br>         <b>Study:</b> <em>The occurrence of the ciguatera fish poisoning producing dinoflagellate genus Gambierdiscus in Pakistan waters</em>     </div>     </div>`)[0];
+                popup_b7834ae44d844cdb96cc5e9b87c97517.setContent(html_3531ddfdbaf25139fa5366e585886023);
+            
+        
+
+        marker_3c32f8e35627db8b6a703ca9c8248f2a.bindPopup(popup_b7834ae44d844cdb96cc5e9b87c97517)
+        ;
+
+        
+    
+    
+            marker_3c32f8e35627db8b6a703ca9c8248f2a.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6097c0f4d6eb2e8fb23cb3962a6a2cc2 = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_0e5b8e308d34f36a63926a7160567792 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6068a38264b7c423cabdb8810be98968 = $(`<div id="html_6068a38264b7c423cabdb8810be98968" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Cirratulid Worms<br>         <b>Count:</b> 40.0<br>         <b>Year:</b> 2015<br>         <b>Study:</b> <em>Coral Community: Preliminary Biodiversity Survey of Churna Island, Northern Arabian Sea</em>     </div>     </div>`)[0];
+                popup_0e5b8e308d34f36a63926a7160567792.setContent(html_6068a38264b7c423cabdb8810be98968);
+            
+        
+
+        marker_6097c0f4d6eb2e8fb23cb3962a6a2cc2.bindPopup(popup_0e5b8e308d34f36a63926a7160567792)
+        ;
+
+        
+    
+    
+            marker_6097c0f4d6eb2e8fb23cb3962a6a2cc2.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b04ee6b93b3059df2bd8e9c65f9b12c = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_697e2eeabe48bda0e4037fb54e7b0688 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f843b6dbaaad696b1fbc1a5c5dfe92a = $(`<div id="html_7f843b6dbaaad696b1fbc1a5c5dfe92a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Harpacticoid Copepods<br>         <b>Count:</b> 40.0<br>         <b>Year:</b> 2015<br>         <b>Study:</b> <em>Coral Community: Preliminary Biodiversity Survey of Churna Island, Northern Arabian Sea</em>     </div>     </div>`)[0];
+                popup_697e2eeabe48bda0e4037fb54e7b0688.setContent(html_7f843b6dbaaad696b1fbc1a5c5dfe92a);
+            
+        
+
+        marker_1b04ee6b93b3059df2bd8e9c65f9b12c.bindPopup(popup_697e2eeabe48bda0e4037fb54e7b0688)
+        ;
+
+        
+    
+    
+            marker_1b04ee6b93b3059df2bd8e9c65f9b12c.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e7d0c5a3812efa02386eab793cd7a78 = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_d607c52e41b6496f2749cd3a07923568 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a52de88c381741bda92318696041bea = $(`<div id="html_4a52de88c381741bda92318696041bea" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Nematode Spp.<br>         <b>Count:</b> 130.0<br>         <b>Year:</b> 2015<br>         <b>Study:</b> <em>Coral Community: Preliminary Biodiversity Survey of Churna Island, Northern Arabian Sea</em>     </div>     </div>`)[0];
+                popup_d607c52e41b6496f2749cd3a07923568.setContent(html_4a52de88c381741bda92318696041bea);
+            
+        
+
+        marker_7e7d0c5a3812efa02386eab793cd7a78.bindPopup(popup_d607c52e41b6496f2749cd3a07923568)
+        ;
+
+        
+    
+    
+            marker_7e7d0c5a3812efa02386eab793cd7a78.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_359cfaac9c794f81d686bae8d7d97fc0 = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_f8dced8ba06cf158fc4a3fa64f477dd6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4007bf15eada219426ed2daf6ae97c92 = $(`<div id="html_4007bf15eada219426ed2daf6ae97c92" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Ostracods<br>         <b>Count:</b> 40.0<br>         <b>Year:</b> 2015<br>         <b>Study:</b> <em>Coral Community: Preliminary Biodiversity Survey of Churna Island, Northern Arabian Sea</em>     </div>     </div>`)[0];
+                popup_f8dced8ba06cf158fc4a3fa64f477dd6.setContent(html_4007bf15eada219426ed2daf6ae97c92);
+            
+        
+
+        marker_359cfaac9c794f81d686bae8d7d97fc0.bindPopup(popup_f8dced8ba06cf158fc4a3fa64f477dd6)
+        ;
+
+        
+    
+    
+            marker_359cfaac9c794f81d686bae8d7d97fc0.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_76afacd3922658bb45f70ebf643902f6 = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_91a1a8a89e38a989555ef126cc179842 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b3831de39271bf30e87d1ef22a93083 = $(`<div id="html_9b3831de39271bf30e87d1ef22a93083" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Coral Species (Churna Island)<br>         <b>Count:</b> 15.0<br>         <b>Year:</b> 2020<br>         <b>Study:</b> <em>Ali et al. (2020) as cited in Mongabay article</em>     </div>     </div>`)[0];
+                popup_91a1a8a89e38a989555ef126cc179842.setContent(html_9b3831de39271bf30e87d1ef22a93083);
+            
+        
+
+        marker_76afacd3922658bb45f70ebf643902f6.bindPopup(popup_91a1a8a89e38a989555ef126cc179842)
+        ;
+
+        
+    
+    
+            marker_76afacd3922658bb45f70ebf643902f6.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e2a7a808d1d3351dcca54a74cc82938 = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_2c8dbc11383e053f10b5ad7783178c33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fbb84e7f9830f14002c958a152d7b72 = $(`<div id="html_7fbb84e7f9830f14002c958a152d7b72" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Corals<br>         <b>Count:</b> 55.0<br>         <b>Year:</b> 2024<br>         <b>Study:</b> <em>Dawn newspaper (link to the research paper)</em>     </div>     </div>`)[0];
+                popup_2c8dbc11383e053f10b5ad7783178c33.setContent(html_7fbb84e7f9830f14002c958a152d7b72);
+            
+        
+
+        marker_8e2a7a808d1d3351dcca54a74cc82938.bindPopup(popup_2c8dbc11383e053f10b5ad7783178c33)
+        ;
+
+        
+    
+    
+            marker_8e2a7a808d1d3351dcca54a74cc82938.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fbe7ade34a3a5d5813f8867e1f393df7 = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_692b9e25a333f8bc39cbfe6b9eaa394f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_028ed21cfabb0bdad475b4ac0c548532 = $(`<div id="html_028ed21cfabb0bdad475b4ac0c548532" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Corals<br>         <b>Count:</b> 50.0<br>         <b>Year:</b> 2024<br>         <b>Study:</b> <em>Tribune Newspaper (link to the research paper)</em>     </div>     </div>`)[0];
+                popup_692b9e25a333f8bc39cbfe6b9eaa394f.setContent(html_028ed21cfabb0bdad475b4ac0c548532);
+            
+        
+
+        marker_fbe7ade34a3a5d5813f8867e1f393df7.bindPopup(popup_692b9e25a333f8bc39cbfe6b9eaa394f)
+        ;
+
+        
+    
+    
+            marker_fbe7ade34a3a5d5813f8867e1f393df7.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_305cecfc4d67803ac286cec49077ac1b = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_d718a9f202c95b52a0795020858aea93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2767f4f6e9d4901cdf6224d0afa0b15b = $(`<div id="html_2767f4f6e9d4901cdf6224d0afa0b15b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Churna Island<br>         <b>Species:</b> Fish<br>         <b>Count:</b> 250.0<br>         <b>Year:</b> 2024<br>         <b>Study:</b> <em>Tribune Newspaper (link to the research paper)</em>     </div>     </div>`)[0];
+                popup_d718a9f202c95b52a0795020858aea93.setContent(html_2767f4f6e9d4901cdf6224d0afa0b15b);
+            
+        
+
+        marker_305cecfc4d67803ac286cec49077ac1b.bindPopup(popup_d718a9f202c95b52a0795020858aea93)
+        ;
+
+        
+    
+    
+            marker_305cecfc4d67803ac286cec49077ac1b.bindTooltip(
+                `<div>
+                     Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b64cddc49135a3c72b9ef2bb43593e30 = L.marker(
+                [24.846, 66.993],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_3de7c784e6454e6a80b2bc216e1658a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d68ad247cb24cc557f895487d77b0b3e = $(`<div id="html_d68ad247cb24cc557f895487d77b0b3e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Coast of Karachi, Pakistan<br>         <b>Species:</b> Gastropoda (Telescopium Telescopium, Nerita Albicilla...)<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2023<br>         <b>Study:</b> <em>The mangrove inhabiting gastropods Telescopium telescopium (Linnaeus, 1758), Nerita albicilla (Linnaeus, 1758), and Lunella coronata...</em>     </div>     </div>`)[0];
+                popup_3de7c784e6454e6a80b2bc216e1658a1.setContent(html_d68ad247cb24cc557f895487d77b0b3e);
+            
+        
+
+        marker_b64cddc49135a3c72b9ef2bb43593e30.bindPopup(popup_3de7c784e6454e6a80b2bc216e1658a1)
+        ;
+
+        
+    
+    
+            marker_b64cddc49135a3c72b9ef2bb43593e30.bindTooltip(
+                `<div>
+                     Coast of Karachi, Pakistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_139a2a5258788ca6a61660449d0e3cc5 = L.marker(
+                [25.045, 66.865],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_500ffd0335700e20c67481c127d4f090 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_194a896c841406e06e35f19a7ba70206 = $(`<div id="html_194a896c841406e06e35f19a7ba70206" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Gaddani Beach (Balochistan)<br>         <b>Species:</b> Pantropical Spotted Dolphin<br>         <b>Count:</b> 200.0<br>         <b>Year:</b> 2009<br>         <b>Study:</b> <em>Diversity and Conservation of Cetaceans in Pakistan</em>     </div>     </div>`)[0];
+                popup_500ffd0335700e20c67481c127d4f090.setContent(html_194a896c841406e06e35f19a7ba70206);
+            
+        
+
+        marker_139a2a5258788ca6a61660449d0e3cc5.bindPopup(popup_500ffd0335700e20c67481c127d4f090)
+        ;
+
+        
+    
+    
+            marker_139a2a5258788ca6a61660449d0e3cc5.bindTooltip(
+                `<div>
+                     Gaddani Beach (Balochistan)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_098ade834f057263df17dcdc8862a718 = L.marker(
+                [24.849, 66.84],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_4644f1c95eb5f68d1783d096b7c6ebd2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9887450999351401a3ab892a4b5fb4e = $(`<div id="html_d9887450999351401a3ab892a4b5fb4e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hab River mouth, Balochistan, Pakistan<br>         <b>Species:</b> Mollusca (Macrofauna On Oyster Reefs)<br>         <b>Count:</b> 122.0<br>         <b>Year:</b> 2020<br>         <b>Study:</b> <em>Biodiversity on intertidal oyster reefs in the Hab River mouth: 35 new records from Pakistan</em>     </div>     </div>`)[0];
+                popup_4644f1c95eb5f68d1783d096b7c6ebd2.setContent(html_d9887450999351401a3ab892a4b5fb4e);
+            
+        
+
+        marker_098ade834f057263df17dcdc8862a718.bindPopup(popup_4644f1c95eb5f68d1783d096b7c6ebd2)
+        ;
+
+        
+    
+    
+            marker_098ade834f057263df17dcdc8862a718.bindTooltip(
+                `<div>
+                     Hab River mouth, Balochistan, Pakistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2480847276b8bb499105482e6f899e2d = L.marker(
+                [24.821, 66.94],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_0c545e47d38a1a243c74c003fe10f951 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92db0447ed6e674257629ba3dade1767 = $(`<div id="html_92db0447ed6e674257629ba3dade1767" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay (Karachi)<br>         <b>Species:</b> Macrobenthic Community<br>         <b>Count:</b> 645.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>Studies on the Factors Affecting the Macrobenthic Community Structure of the Exposed Sandy Beaches Near Karachi, Pakistan</em>     </div>     </div>`)[0];
+                popup_0c545e47d38a1a243c74c003fe10f951.setContent(html_92db0447ed6e674257629ba3dade1767);
+            
+        
+
+        marker_2480847276b8bb499105482e6f899e2d.bindPopup(popup_0c545e47d38a1a243c74c003fe10f951)
+        ;
+
+        
+    
+    
+            marker_2480847276b8bb499105482e6f899e2d.bindTooltip(
+                `<div>
+                     Hawksbay (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98821cc555c6a041b804abbe0edf2b25 = L.marker(
+                [24.821, 66.94],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_efcf1a7a0315ad1774a9229fb85c86bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2754090f612ad8272f258c5989aca940 = $(`<div id="html_2754090f612ad8272f258c5989aca940" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay (Karachi)<br>         <b>Species:</b> Marine Algae<br>         <b>Count:</b> 26.0<br>         <b>Year:</b> 2020<br>         <b>Study:</b> <em>DISTRIBUTION AND DIVERSITY OF MARINE ALGAE OF SINDH COASTAL AREA: ALPHA, BETA AND GAMMA DIVERSITY</em>     </div>     </div>`)[0];
+                popup_efcf1a7a0315ad1774a9229fb85c86bb.setContent(html_2754090f612ad8272f258c5989aca940);
+            
+        
+
+        marker_98821cc555c6a041b804abbe0edf2b25.bindPopup(popup_efcf1a7a0315ad1774a9229fb85c86bb)
+        ;
+
+        
+    
+    
+            marker_98821cc555c6a041b804abbe0edf2b25.bindTooltip(
+                `<div>
+                     Hawksbay (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a8759976acd2bb70e122e818f549973e = L.marker(
+                [24.821, 66.94],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_0893841edc7300bea21eed2a5374494c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3db6bcf54c2f4a75e2fa9c89e83ef52f = $(`<div id="html_3db6bcf54c2f4a75e2fa9c89e83ef52f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay (Karachi)<br>         <b>Species:</b> Chthamalus Malayensis<br>         <b>Count:</b> 12.83<br>         <b>Year:</b> 2022<br>         <b>Study:</b> <em>COMPARATIVE BIOECOLOGICAL CHARACTERIZATION OF CHTHAMALUS MALAYENSIS FOUND AT SANDSPIT AND HAWKSBAY BEACHES, KARACHI</em>     </div>     </div>`)[0];
+                popup_0893841edc7300bea21eed2a5374494c.setContent(html_3db6bcf54c2f4a75e2fa9c89e83ef52f);
+            
+        
+
+        marker_a8759976acd2bb70e122e818f549973e.bindPopup(popup_0893841edc7300bea21eed2a5374494c)
+        ;
+
+        
+    
+    
+            marker_a8759976acd2bb70e122e818f549973e.bindTooltip(
+                `<div>
+                     Hawksbay (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0e20b8e637385791edaa8e25baca8548 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c762299301d13031e7cdaa227ca01174 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5c4e5769c4387778f45eca6d948d9cd = $(`<div id="html_e5c4e5769c4387778f45eca6d948d9cd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay-Sandspit<br>         <b>Species:</b> Marine Turtles (Nesting Species)<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 1984<br>         <b>Study:</b> <em>Conservation of Turtles at Sandspit & Hawkes Bay, WWF Int’l Report 1451, 1984 (A.M. Kabraji & F.F. Asrar)</em>     </div>     </div>`)[0];
+                popup_c762299301d13031e7cdaa227ca01174.setContent(html_e5c4e5769c4387778f45eca6d948d9cd);
+            
+        
+
+        marker_0e20b8e637385791edaa8e25baca8548.bindPopup(popup_c762299301d13031e7cdaa227ca01174)
+        ;
+
+        
+    
+    
+            marker_0e20b8e637385791edaa8e25baca8548.bindTooltip(
+                `<div>
+                     Hawksbay-Sandspit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6f2b8e286db56ab89a5c4cc798eedb5 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c1759375fbd31d4f3aa9d6c372ffc693 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9dd6e675b7d2aec2b0bf73c6971f5a98 = $(`<div id="html_9dd6e675b7d2aec2b0bf73c6971f5a98" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay-Sandspit<br>         <b>Species:</b> Green Turtle (Chelonia Mydas)<br>         <b>Count:</b> 6.0<br>         <b>Year:</b> 1984<br>         <b>Study:</b> <em>Kabraji and Firdous (1984)</em>     </div>     </div>`)[0];
+                popup_c1759375fbd31d4f3aa9d6c372ffc693.setContent(html_9dd6e675b7d2aec2b0bf73c6971f5a98);
+            
+        
+
+        marker_a6f2b8e286db56ab89a5c4cc798eedb5.bindPopup(popup_c1759375fbd31d4f3aa9d6c372ffc693)
+        ;
+
+        
+    
+    
+            marker_a6f2b8e286db56ab89a5c4cc798eedb5.bindTooltip(
+                `<div>
+                     Hawksbay-Sandspit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9311592354c44462a783045509312c95 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_4cf67b28d5dd0d306404f61bf9436dcc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b1092be2a2587a8884418eba1b96774 = $(`<div id="html_8b1092be2a2587a8884418eba1b96774" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay-Sandspit<br>         <b>Species:</b> Marine Turtles (Chelonia Mydas, Lepidochelys Olivacea)<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 1984<br>         <b>Study:</b> <em>Kabraji and Firdous (1984)</em>     </div>     </div>`)[0];
+                popup_4cf67b28d5dd0d306404f61bf9436dcc.setContent(html_8b1092be2a2587a8884418eba1b96774);
+            
+        
+
+        marker_9311592354c44462a783045509312c95.bindPopup(popup_4cf67b28d5dd0d306404f61bf9436dcc)
+        ;
+
+        
+    
+    
+            marker_9311592354c44462a783045509312c95.bindTooltip(
+                `<div>
+                     Hawksbay-Sandspit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3e5893029c866e7547c7820d022a23c5 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c1567409eab073c51c877c2d574b8382 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e56708e28d4eb2d7dbe261b451be7042 = $(`<div id="html_e56708e28d4eb2d7dbe261b451be7042" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay-Sandspit<br>         <b>Species:</b> Olive Ridley Turtle (Lepidochelys Olivacea)<br>         <b>Count:</b> 200.0<br>         <b>Year:</b> 1984<br>         <b>Study:</b> <em>Kabraji and Firdous (1984)</em>     </div>     </div>`)[0];
+                popup_c1567409eab073c51c877c2d574b8382.setContent(html_e56708e28d4eb2d7dbe261b451be7042);
+            
+        
+
+        marker_3e5893029c866e7547c7820d022a23c5.bindPopup(popup_c1567409eab073c51c877c2d574b8382)
+        ;
+
+        
+    
+    
+            marker_3e5893029c866e7547c7820d022a23c5.bindTooltip(
+                `<div>
+                     Hawksbay-Sandspit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_61c4d0b7898fdf0168bbdb9d603430d5 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_957669922a1c57101e8d0c3cf7040cab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6717b342d6ea534859609b056350442 = $(`<div id="html_b6717b342d6ea534859609b056350442" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Hawksbay-Sandspit<br>         <b>Species:</b> Green Seaweeds<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2009<br>         <b>Study:</b> <em>Diversity of Green Seaweeds along the Coast of Karachi</em>     </div>     </div>`)[0];
+                popup_957669922a1c57101e8d0c3cf7040cab.setContent(html_b6717b342d6ea534859609b056350442);
+            
+        
+
+        marker_61c4d0b7898fdf0168bbdb9d603430d5.bindPopup(popup_957669922a1c57101e8d0c3cf7040cab)
+        ;
+
+        
+    
+    
+            marker_61c4d0b7898fdf0168bbdb9d603430d5.bindTooltip(
+                `<div>
+                     Hawksbay-Sandspit
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_62798ff3b99de2cafa83f60b6dde3e74 = L.marker(
+                [24.18, 67.65],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_76c40eef18cc1aa4a38a5c591ee92257 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2664939280c4c26608542e56a7a4c76c = $(`<div id="html_2664939280c4c26608542e56a7a4c76c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Indus Delta<br>         <b>Species:</b> Fish & Shellfish<br>         <b>Count:</b> 80.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Conservation and management of biodiversity in Pakistan through the establishment of marine protected areas</em>     </div>     </div>`)[0];
+                popup_76c40eef18cc1aa4a38a5c591ee92257.setContent(html_2664939280c4c26608542e56a7a4c76c);
+            
+        
+
+        marker_62798ff3b99de2cafa83f60b6dde3e74.bindPopup(popup_76c40eef18cc1aa4a38a5c591ee92257)
+        ;
+
+        
+    
+    
+            marker_62798ff3b99de2cafa83f60b6dde3e74.bindTooltip(
+                `<div>
+                     Indus Delta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_916b34a1b4f374c8ed30ab9ec7a47ff3 = L.marker(
+                [24.18, 67.65],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_d8d55772bce347a8d2ca183a9be9c564 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32f51960edbcef62da32c7aeebb44f0f = $(`<div id="html_32f51960edbcef62da32c7aeebb44f0f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Indus Delta<br>         <b>Species:</b> Mangroves<br>         <b>Count:</b> 4.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Conservation and management of biodiversity in Pakistan through the establishment of marine protected areas</em>     </div>     </div>`)[0];
+                popup_d8d55772bce347a8d2ca183a9be9c564.setContent(html_32f51960edbcef62da32c7aeebb44f0f);
+            
+        
+
+        marker_916b34a1b4f374c8ed30ab9ec7a47ff3.bindPopup(popup_d8d55772bce347a8d2ca183a9be9c564)
+        ;
+
+        
+    
+    
+            marker_916b34a1b4f374c8ed30ab9ec7a47ff3.bindTooltip(
+                `<div>
+                     Indus Delta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ccf7cf8f5e4b9519063101c11042fb97 = L.marker(
+                [24.814, 66.969],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_0ac2668a522b838e0bda06673ab8f6b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0b6c2f2faa39d4f339473032ada0e3f = $(`<div id="html_e0b6c2f2faa39d4f339473032ada0e3f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Karachi Western Backwaters<br>         <b>Species:</b> Bird Species<br>         <b>Count:</b> 96.0<br>         <b>Year:</b> 2005<br>         <b>Study:</b> <em>STUDIES ON THE FLORA AND AVIFAUNA ASSOCIATED WITH THE KARACHI WESTERN BACKWATERS MANGROVE FOREST</em>     </div>     </div>`)[0];
+                popup_0ac2668a522b838e0bda06673ab8f6b8.setContent(html_e0b6c2f2faa39d4f339473032ada0e3f);
+            
+        
+
+        marker_ccf7cf8f5e4b9519063101c11042fb97.bindPopup(popup_0ac2668a522b838e0bda06673ab8f6b8)
+        ;
+
+        
+    
+    
+            marker_ccf7cf8f5e4b9519063101c11042fb97.bindTooltip(
+                `<div>
+                     Karachi Western Backwaters
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_745ea253e260a62e363da80c8f524b65 = L.marker(
+                [24.814, 66.969],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_816fc8964d9a39c684b7c0cb5735866c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_269e39c6003d39b37db6722b489761f8 = $(`<div id="html_269e39c6003d39b37db6722b489761f8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Karachi Western Backwaters<br>         <b>Species:</b> Plant Species<br>         <b>Count:</b> 58.0<br>         <b>Year:</b> 2005<br>         <b>Study:</b> <em>STUDIES ON THE FLORA AND AVIFAUNA ASSOCIATED WITH THE KARACHI WESTERN BACKWATERS MANGROVE FOREST</em>     </div>     </div>`)[0];
+                popup_816fc8964d9a39c684b7c0cb5735866c.setContent(html_269e39c6003d39b37db6722b489761f8);
+            
+        
+
+        marker_745ea253e260a62e363da80c8f524b65.bindPopup(popup_816fc8964d9a39c684b7c0cb5735866c)
+        ;
+
+        
+    
+    
+            marker_745ea253e260a62e363da80c8f524b65.bindTooltip(
+                `<div>
+                     Karachi Western Backwaters
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_79991ee6dd1dd07dbb57666f8f6e55d8 = L.marker(
+                [24.77, 67.12],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c5b9f724faf83a92ae5de44a9738deba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_877cd203240cbff7c9a9616f1d9dd42b = $(`<div id="html_877cd203240cbff7c9a9616f1d9dd42b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Korangi and Phitti Creeks<br>         <b>Species:</b> Fishes<br>         <b>Count:</b> 20.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>DISTRIBUTION AND STATUS OF THE VERTEBRATE BIODIVERSITY OF KORANGI AND PHITTI CREEKS, KARACHI COAST, SINDH, PAKISTAN</em>     </div>     </div>`)[0];
+                popup_c5b9f724faf83a92ae5de44a9738deba.setContent(html_877cd203240cbff7c9a9616f1d9dd42b);
+            
+        
+
+        marker_79991ee6dd1dd07dbb57666f8f6e55d8.bindPopup(popup_c5b9f724faf83a92ae5de44a9738deba)
+        ;
+
+        
+    
+    
+            marker_79991ee6dd1dd07dbb57666f8f6e55d8.bindTooltip(
+                `<div>
+                     Korangi and Phitti Creeks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8c81820e0876de6846b4527e96f25ea = L.marker(
+                [24.77, 67.12],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_79d3a64c6df0826eaf8e425929c405f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fa5d2bd03ca80b34bc2c2ffa194ea17 = $(`<div id="html_9fa5d2bd03ca80b34bc2c2ffa194ea17" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Korangi and Phitti Creeks<br>         <b>Species:</b> Indian Humpback Dolphin<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>DISTRIBUTION AND STATUS OF THE VERTEBRATE BIODIVERSITY OF KORANGI AND PHITTI CREEKS, KARACHI COAST, SINDH, PAKISTAN</em>     </div>     </div>`)[0];
+                popup_79d3a64c6df0826eaf8e425929c405f3.setContent(html_9fa5d2bd03ca80b34bc2c2ffa194ea17);
+            
+        
+
+        marker_e8c81820e0876de6846b4527e96f25ea.bindPopup(popup_79d3a64c6df0826eaf8e425929c405f3)
+        ;
+
+        
+    
+    
+            marker_e8c81820e0876de6846b4527e96f25ea.bindTooltip(
+                `<div>
+                     Korangi and Phitti Creeks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d9ca72fd9e8b92d91d911982e8628507 = L.marker(
+                [25.1, 62.32],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_21ec6034cac127e4cc582d464d5bab4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf178427dbc26cba245a54118670daca = $(`<div id="html_cf178427dbc26cba245a54118670daca" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Makran coast, Baluchistan (Gawadar West Bay and Gawader east Bay)<br>         <b>Species:</b> Intertidal Organisms<br>         <b>Count:</b> 51.0<br>         <b>Year:</b> 1982<br>         <b>Study:</b> <em>The distribution and abundance of intertidal organisms of some beaches of Makran coast in Pakistan (Northern Arabian Sea)</em>     </div>     </div>`)[0];
+                popup_21ec6034cac127e4cc582d464d5bab4a.setContent(html_cf178427dbc26cba245a54118670daca);
+            
+        
+
+        marker_d9ca72fd9e8b92d91d911982e8628507.bindPopup(popup_21ec6034cac127e4cc582d464d5bab4a)
+        ;
+
+        
+    
+    
+            marker_d9ca72fd9e8b92d91d911982e8628507.bindTooltip(
+                `<div>
+                     Makran coast, Baluchistan (Gawadar West Bay and Gawader east Bay)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a26f5460b854d20dc52db2a4f43226ea = L.marker(
+                [24.786, 66.974],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_87cde77f91c21e583ed441f17277711f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0792173e86d4f59ad29f1185a8c512d6 = $(`<div id="html_0792173e86d4f59ad29f1185a8c512d6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora (Karachi)<br>         <b>Species:</b> Bivalves<br>         <b>Count:</b> 12.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_87cde77f91c21e583ed441f17277711f.setContent(html_0792173e86d4f59ad29f1185a8c512d6);
+            
+        
+
+        marker_a26f5460b854d20dc52db2a4f43226ea.bindPopup(popup_87cde77f91c21e583ed441f17277711f)
+        ;
+
+        
+    
+    
+            marker_a26f5460b854d20dc52db2a4f43226ea.bindTooltip(
+                `<div>
+                     Manora (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7be460bdea2be5fb1c869cfd310a6f29 = L.marker(
+                [24.786, 66.974],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_4a42e5013730c795ca4e28a77fad4034 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46764ca812a3f6cb5c29c23c6a9526c3 = $(`<div id="html_46764ca812a3f6cb5c29c23c6a9526c3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora (Karachi)<br>         <b>Species:</b> Gastropods (Dominant Category)<br>         <b>Count:</b> 49.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_4a42e5013730c795ca4e28a77fad4034.setContent(html_46764ca812a3f6cb5c29c23c6a9526c3);
+            
+        
+
+        marker_7be460bdea2be5fb1c869cfd310a6f29.bindPopup(popup_4a42e5013730c795ca4e28a77fad4034)
+        ;
+
+        
+    
+    
+            marker_7be460bdea2be5fb1c869cfd310a6f29.bindTooltip(
+                `<div>
+                     Manora (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee557e40540d3ac16572cca22686254c = L.marker(
+                [24.786, 66.974],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_2e15657ddb101513b3401173af271364 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aac7164ac9fd6da6fa49b7155a48228a = $(`<div id="html_aac7164ac9fd6da6fa49b7155a48228a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora (Karachi)<br>         <b>Species:</b> Total Molluscs<br>         <b>Count:</b> 63.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_2e15657ddb101513b3401173af271364.setContent(html_aac7164ac9fd6da6fa49b7155a48228a);
+            
+        
+
+        marker_ee557e40540d3ac16572cca22686254c.bindPopup(popup_2e15657ddb101513b3401173af271364)
+        ;
+
+        
+    
+    
+            marker_ee557e40540d3ac16572cca22686254c.bindTooltip(
+                `<div>
+                     Manora (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c99b500a3871108b83b552cbaf6688e0 = L.marker(
+                [24.786, 66.974],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_2a99bcddf3fe21152205bccdcf009056 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7db166104c108679610c4bdec6a39e27 = $(`<div id="html_7db166104c108679610c4bdec6a39e27" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora (Karachi)<br>         <b>Species:</b> Green Seaweeds<br>         <b>Count:</b> 34.0<br>         <b>Year:</b> 2009<br>         <b>Study:</b> <em>Diversity of Green Seaweeds along the Coast of Karachi</em>     </div>     </div>`)[0];
+                popup_2a99bcddf3fe21152205bccdcf009056.setContent(html_7db166104c108679610c4bdec6a39e27);
+            
+        
+
+        marker_c99b500a3871108b83b552cbaf6688e0.bindPopup(popup_2a99bcddf3fe21152205bccdcf009056)
+        ;
+
+        
+    
+    
+            marker_c99b500a3871108b83b552cbaf6688e0.bindTooltip(
+                `<div>
+                     Manora (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e3e4f0d282a9b0bd71c7bd9e8e30e74 = L.marker(
+                [24.786, 66.974],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5faefbfefcb074d8d9ad7ec8f68b7fe4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e932eb79a75645dd1613aae96ac1f17 = $(`<div id="html_5e932eb79a75645dd1613aae96ac1f17" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora (Karachi)<br>         <b>Species:</b> Marine Algae<br>         <b>Count:</b> 44.0<br>         <b>Year:</b> 2020<br>         <b>Study:</b> <em>DISTRIBUTION AND DIVERSITY OF MARINE ALGAE OF SINDH COASTAL AREA: ALPHA, BETA AND GAMMA DIVERSITY</em>     </div>     </div>`)[0];
+                popup_5faefbfefcb074d8d9ad7ec8f68b7fe4.setContent(html_5e932eb79a75645dd1613aae96ac1f17);
+            
+        
+
+        marker_1e3e4f0d282a9b0bd71c7bd9e8e30e74.bindPopup(popup_5faefbfefcb074d8d9ad7ec8f68b7fe4)
+        ;
+
+        
+    
+    
+            marker_1e3e4f0d282a9b0bd71c7bd9e8e30e74.bindTooltip(
+                `<div>
+                     Manora (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b2caf4729009e9774deda92984967dd1 = L.marker(
+                [24.816, 66.918],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_ec09ea3f14cc5bb04ecaeca30b47b8a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df1e2205c4e18999f4eebd873cbd409c = $(`<div id="html_df1e2205c4e18999f4eebd873cbd409c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora & Buleji (Karachi coast)<br>         <b>Species:</b> Crustacea (Fauna Associated With Algae)<br>         <b>Count:</b> 23.0<br>         <b>Year:</b> 2021<br>         <b>Study:</b> <em>Crustacean Fauna in Association with Common Algae of Karachi Coastal Waters</em>     </div>     </div>`)[0];
+                popup_ec09ea3f14cc5bb04ecaeca30b47b8a4.setContent(html_df1e2205c4e18999f4eebd873cbd409c);
+            
+        
+
+        marker_b2caf4729009e9774deda92984967dd1.bindPopup(popup_ec09ea3f14cc5bb04ecaeca30b47b8a4)
+        ;
+
+        
+    
+    
+            marker_b2caf4729009e9774deda92984967dd1.bindTooltip(
+                `<div>
+                     Manora & Buleji (Karachi coast)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fac6f0abf7bfacce563e3542c99b13e9 = L.marker(
+                [24.801, 66.969],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_ab47112b08044d8ecd56a7810cc8f982 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd44f220fa203275aec439a02a0f4700 = $(`<div id="html_bd44f220fa203275aec439a02a0f4700" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Beach, Karachi<br>         <b>Species:</b> Plastic Debris Categories<br>         <b>Count:</b> 8.0<br>         <b>Year:</b> 2023<br>         <b>Study:</b> <em>Composition and relative abundance of plastic debris along Manora and Sandspit beaches, Karachi, Pakistan</em>     </div>     </div>`)[0];
+                popup_ab47112b08044d8ecd56a7810cc8f982.setContent(html_bd44f220fa203275aec439a02a0f4700);
+            
+        
+
+        marker_fac6f0abf7bfacce563e3542c99b13e9.bindPopup(popup_ab47112b08044d8ecd56a7810cc8f982)
+        ;
+
+        
+    
+    
+            marker_fac6f0abf7bfacce563e3542c99b13e9.bindTooltip(
+                `<div>
+                     Manora Beach, Karachi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c00c063daf4369eadfcb46b9a2325fa = L.marker(
+                [24.825, 66.98],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_52ca0c0f4c134b6d62d275778d7c19d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51922f7613ddd406f41454eeea136360 = $(`<div id="html_51922f7613ddd406f41454eeea136360" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Channel<br>         <b>Species:</b> Marine Biota (Benthic Fish, Pelagic Fish, Zooplankton)<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2015<br>         <b>Study:</b> <em>Saleem et al. (2015)</em>     </div>     </div>`)[0];
+                popup_52ca0c0f4c134b6d62d275778d7c19d2.setContent(html_51922f7613ddd406f41454eeea136360);
+            
+        
+
+        marker_9c00c063daf4369eadfcb46b9a2325fa.bindPopup(popup_52ca0c0f4c134b6d62d275778d7c19d2)
+        ;
+
+        
+    
+    
+            marker_9c00c063daf4369eadfcb46b9a2325fa.bindTooltip(
+                `<div>
+                     Manora Channel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_087e56fee48b2f54c47bfe979771a31c = L.marker(
+                [24.825, 66.98],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5eb6d3faa03b3c5f1f49adca119d8c57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_428bac783d640ba901b78fa5cc4fb1bb = $(`<div id="html_428bac783d640ba901b78fa5cc4fb1bb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Channel<br>         <b>Species:</b> Marine Biota (Radiological Risk Assessment)<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2015<br>         <b>Study:</b> <em>Saleem et al. (2015) referenced in study</em>     </div>     </div>`)[0];
+                popup_5eb6d3faa03b3c5f1f49adca119d8c57.setContent(html_428bac783d640ba901b78fa5cc4fb1bb);
+            
+        
+
+        marker_087e56fee48b2f54c47bfe979771a31c.bindPopup(popup_5eb6d3faa03b3c5f1f49adca119d8c57)
+        ;
+
+        
+    
+    
+            marker_087e56fee48b2f54c47bfe979771a31c.bindTooltip(
+                `<div>
+                     Manora Channel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c3c0d7f601b935e6b85df33c111134e = L.marker(
+                [24.825, 66.98],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_6badbd921f7b81f506eb9ac3f7ccd799 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6efe5891b9e96f8a27505ed01e966b4d = $(`<div id="html_6efe5891b9e96f8a27505ed01e966b4d" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Channel & associated backwaters<br>         <b>Species:</b> Fish Species (Length–Weight Study)<br>         <b>Count:</b> 5.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Length–weight relationships of five fish species collected from Manora Channel and associated backwaters of the northern Arabian Sea...</em>     </div>     </div>`)[0];
+                popup_6badbd921f7b81f506eb9ac3f7ccd799.setContent(html_6efe5891b9e96f8a27505ed01e966b4d);
+            
+        
+
+        marker_8c3c0d7f601b935e6b85df33c111134e.bindPopup(popup_6badbd921f7b81f506eb9ac3f7ccd799)
+        ;
+
+        
+    
+    
+            marker_8c3c0d7f601b935e6b85df33c111134e.bindTooltip(
+                `<div>
+                     Manora Channel & associated backwaters
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_82b638f0b9f99b81090ce5e78e50e047 = L.marker(
+                [24.825, 66.98],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_1864d27eaaf6e64ce7a2f65bf52a013f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19a830c24076559af0e047cf35c509b0 = $(`<div id="html_19a830c24076559af0e047cf35c509b0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Channel, Karachi<br>         <b>Species:</b> Gambierdiscus Cf. Yasumotoi (Dinoflagellate)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2007<br>         <b>Study:</b> <em>The occurrence of the ciguatera fish poisoning producing dinoflagellate genus Gambierdiscus in Pakistan waters</em>     </div>     </div>`)[0];
+                popup_1864d27eaaf6e64ce7a2f65bf52a013f.setContent(html_19a830c24076559af0e047cf35c509b0);
+            
+        
+
+        marker_82b638f0b9f99b81090ce5e78e50e047.bindPopup(popup_1864d27eaaf6e64ce7a2f65bf52a013f)
+        ;
+
+        
+    
+    
+            marker_82b638f0b9f99b81090ce5e78e50e047.bindTooltip(
+                `<div>
+                     Manora Channel, Karachi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e762cba9541dbf839bffe612df2e6373 = L.marker(
+                [24.825, 66.98],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_22f68754242b48a5049e50944c17e5b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88d746adba6f724dd63e6679610d2663 = $(`<div id="html_88d746adba6f724dd63e6679610d2663" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Channel, Karachi<br>         <b>Species:</b> Marine Organisms Affected By Ph Changes<br>         <b>Count:</b> 4.0<br>         <b>Year:</b> 2019<br>         <b>Study:</b> <em>An Application of Principal Component Analysis...</em>     </div>     </div>`)[0];
+                popup_22f68754242b48a5049e50944c17e5b5.setContent(html_88d746adba6f724dd63e6679610d2663);
+            
+        
+
+        marker_e762cba9541dbf839bffe612df2e6373.bindPopup(popup_22f68754242b48a5049e50944c17e5b5)
+        ;
+
+        
+    
+    
+            marker_e762cba9541dbf839bffe612df2e6373.bindTooltip(
+                `<div>
+                     Manora Channel, Karachi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ccf33474ff6989fb28f2605c78589f6c = L.marker(
+                [24.85, 66.81],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_6661e8386ae20c11cfaa020fd8618d71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e3836cb6561fb419aa485c8d3c5a901 = $(`<div id="html_8e3836cb6561fb419aa485c8d3c5a901" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Channel, Karachi & Churna Island, Balochistan<br>         <b>Species:</b> Gambierdiscus Belizeanus (Dinoflagellate)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2007<br>         <b>Study:</b> <em>The occurrence of the ciguatera fish poisoning producing dinoflagellate genus Gambierdiscus in Pakistan waters</em>     </div>     </div>`)[0];
+                popup_6661e8386ae20c11cfaa020fd8618d71.setContent(html_8e3836cb6561fb419aa485c8d3c5a901);
+            
+        
+
+        marker_ccf33474ff6989fb28f2605c78589f6c.bindPopup(popup_6661e8386ae20c11cfaa020fd8618d71)
+        ;
+
+        
+    
+    
+            marker_ccf33474ff6989fb28f2605c78589f6c.bindTooltip(
+                `<div>
+                     Manora Channel, Karachi & Churna Island, Balochistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5bf127007df286e6a934e7f7b75b293e = L.marker(
+                [24.85, 66.81],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_ac3fbc173349b46aef42fe293f3fd6c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_475d47a37e8ebefd88ae2185a4128c76 = $(`<div id="html_475d47a37e8ebefd88ae2185a4128c76" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Channel, Karachi & Churna Island, Balochistan<br>         <b>Species:</b> Gambierdiscus Toxicus (Dinoflagellate)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2007<br>         <b>Study:</b> <em>The occurrence of the ciguatera fish poisoning producing dinoflagellate genus Gambierdiscus in Pakistan waters</em>     </div>     </div>`)[0];
+                popup_ac3fbc173349b46aef42fe293f3fd6c0.setContent(html_475d47a37e8ebefd88ae2185a4128c76);
+            
+        
+
+        marker_5bf127007df286e6a934e7f7b75b293e.bindPopup(popup_ac3fbc173349b46aef42fe293f3fd6c0)
+        ;
+
+        
+    
+    
+            marker_5bf127007df286e6a934e7f7b75b293e.bindTooltip(
+                `<div>
+                     Manora Channel, Karachi & Churna Island, Balochistan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_58d3fc6975c2ddd591ea84483b85afc4 = L.marker(
+                [24.811, 66.981],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_eecb197cd4d67ee3fabe849ae079ea92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58d9f57444962bf398fc6750846756b4 = $(`<div id="html_58d9f57444962bf398fc6750846756b4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Island nearshore (MI-2)<br>         <b>Species:</b> All Dinoflagellates<br>         <b>Count:</b> 109.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_eecb197cd4d67ee3fabe849ae079ea92.setContent(html_58d9f57444962bf398fc6750846756b4);
+            
+        
+
+        marker_58d3fc6975c2ddd591ea84483b85afc4.bindPopup(popup_eecb197cd4d67ee3fabe849ae079ea92)
+        ;
+
+        
+    
+    
+            marker_58d3fc6975c2ddd591ea84483b85afc4.bindTooltip(
+                `<div>
+                     Manora Island nearshore (MI-2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_35df5d2c8d566cfe8b80fec4f3ff9c5a = L.marker(
+                [24.811, 66.981],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_ae8533681f41e24defea00dda22abe4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47959045a985aa663bc3d8e96fef646c = $(`<div id="html_47959045a985aa663bc3d8e96fef646c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Island nearshore (MI-2)<br>         <b>Species:</b> Dinoflagellates (Phytoplankton)<br>         <b>Count:</b> 109.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_ae8533681f41e24defea00dda22abe4a.setContent(html_47959045a985aa663bc3d8e96fef646c);
+            
+        
+
+        marker_35df5d2c8d566cfe8b80fec4f3ff9c5a.bindPopup(popup_ae8533681f41e24defea00dda22abe4a)
+        ;
+
+        
+    
+    
+            marker_35df5d2c8d566cfe8b80fec4f3ff9c5a.bindTooltip(
+                `<div>
+                     Manora Island nearshore (MI-2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c33a7063d752b506f04ae50a7e35bde2 = L.marker(
+                [24.811, 66.981],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5f2de162b8e294096ee4f838a46e3495 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b4ac61a87b314306e15c7e8bac6f046 = $(`<div id="html_9b4ac61a87b314306e15c7e8bac6f046" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Island offshore (MI-1)<br>         <b>Species:</b> All Dinoflagellates<br>         <b>Count:</b> 149.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_5f2de162b8e294096ee4f838a46e3495.setContent(html_9b4ac61a87b314306e15c7e8bac6f046);
+            
+        
+
+        marker_c33a7063d752b506f04ae50a7e35bde2.bindPopup(popup_5f2de162b8e294096ee4f838a46e3495)
+        ;
+
+        
+    
+    
+            marker_c33a7063d752b506f04ae50a7e35bde2.bindTooltip(
+                `<div>
+                     Manora Island offshore (MI-1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e60677f491422467397422e966df274a = L.marker(
+                [24.811, 66.981],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_af84788862b6d7c3dac75883a64bacac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9b720967d6a54c93b6e99a518870c0b = $(`<div id="html_e9b720967d6a54c93b6e99a518870c0b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Island offshore (MI-1)<br>         <b>Species:</b> Dinoflagellates (Phytoplankton)<br>         <b>Count:</b> 149.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_af84788862b6d7c3dac75883a64bacac.setContent(html_e9b720967d6a54c93b6e99a518870c0b);
+            
+        
+
+        marker_e60677f491422467397422e966df274a.bindPopup(popup_af84788862b6d7c3dac75883a64bacac)
+        ;
+
+        
+    
+    
+            marker_e60677f491422467397422e966df274a.bindTooltip(
+                `<div>
+                     Manora Island offshore (MI-1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_87e8bacf2a4914eb5fb2df33315020b7 = L.marker(
+                [24.81, 66.974],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_4a54e625d0d0f0909e8ec82fe55f61d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7b416574b1e94ab44e857c39dc7976b = $(`<div id="html_f7b416574b1e94ab44e857c39dc7976b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora Peninsula, Karachi coast<br>         <b>Species:</b> Wetland Macrophytes (Canna Indica, Canna Edulis, Typha Spp, Phragmites Spp, Water Lily)<br>         <b>Count:</b> 5.0<br>         <b>Year:</b> 2016<br>         <b>Study:</b> <em>Reduction of Sewage Pollution from Manora Island into Coastal Waters of Karachi (MFF project brochure)</em>     </div>     </div>`)[0];
+                popup_4a54e625d0d0f0909e8ec82fe55f61d7.setContent(html_f7b416574b1e94ab44e857c39dc7976b);
+            
+        
+
+        marker_87e8bacf2a4914eb5fb2df33315020b7.bindPopup(popup_4a54e625d0d0f0909e8ec82fe55f61d7)
+        ;
+
+        
+    
+    
+            marker_87e8bacf2a4914eb5fb2df33315020b7.bindTooltip(
+                `<div>
+                     Manora Peninsula, Karachi coast
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8b2919a46e9b38ebbef8ab6a655c7132 = L.marker(
+                [24.821, 66.883],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_6e0de06a43c252a998df6d6875b0b7c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ee8885b643901e24327952dd3903cb8 = $(`<div id="html_9ee8885b643901e24327952dd3903cb8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Manora, Sandspit, Hawkesbay & Cape Monze areas<br>         <b>Species:</b> Reptiles (Total Species Recorded)<br>         <b>Count:</b> 27.0<br>         <b>Year:</b> 2010<br>         <b>Study:</b> <em>Distribution, population status and environmental impacts on reptiles in Manora, Sandspit, Hawkesbay and Cape Monze areas of Karachi coast (Khan et al., 2010)</em>     </div>     </div>`)[0];
+                popup_6e0de06a43c252a998df6d6875b0b7c8.setContent(html_9ee8885b643901e24327952dd3903cb8);
+            
+        
+
+        marker_8b2919a46e9b38ebbef8ab6a655c7132.bindPopup(popup_6e0de06a43c252a998df6d6875b0b7c8)
+        ;
+
+        
+    
+    
+            marker_8b2919a46e9b38ebbef8ab6a655c7132.bindTooltip(
+                `<div>
+                     Manora, Sandspit, Hawkesbay & Cape Monze areas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_18dd7265d5cb9debe71fcc5d2478704e = L.marker(
+                [25.29, 66.02],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_d65fe42fd06a872aa667ce74bd1e7676 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0ebb20e5f8248cbc344bc0fafc22937 = $(`<div id="html_d0ebb20e5f8248cbc344bc0fafc22937" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Miani Hor (Somniani Bay)<br>         <b>Species:</b> Mangroves<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Conservation and management of biodiversity in Pakistan through the establishment of marine protected areas</em>     </div>     </div>`)[0];
+                popup_d65fe42fd06a872aa667ce74bd1e7676.setContent(html_d0ebb20e5f8248cbc344bc0fafc22937);
+            
+        
+
+        marker_18dd7265d5cb9debe71fcc5d2478704e.bindPopup(popup_d65fe42fd06a872aa667ce74bd1e7676)
+        ;
+
+        
+    
+    
+            marker_18dd7265d5cb9debe71fcc5d2478704e.bindTooltip(
+                `<div>
+                     Miani Hor (Somniani Bay)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_32f5c6d4d2bb16cbd9c06553a2531467 = L.marker(
+                [24.869, 66.757],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_cb5fc9a9311ea223652aed7b9f2676c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c8c9796c9bcfc40cec5f3727d57d323 = $(`<div id="html_5c8c9796c9bcfc40cec5f3727d57d323" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Mubarak Village nearshore (MV-2)<br>         <b>Species:</b> All Dinoflagellates<br>         <b>Count:</b> 115.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_cb5fc9a9311ea223652aed7b9f2676c5.setContent(html_5c8c9796c9bcfc40cec5f3727d57d323);
+            
+        
+
+        marker_32f5c6d4d2bb16cbd9c06553a2531467.bindPopup(popup_cb5fc9a9311ea223652aed7b9f2676c5)
+        ;
+
+        
+    
+    
+            marker_32f5c6d4d2bb16cbd9c06553a2531467.bindTooltip(
+                `<div>
+                     Mubarak Village nearshore (MV-2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ed3d5db26f354276512474cb311c1327 = L.marker(
+                [24.869, 66.757],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_b0197018a81ee1a22d3df1d2d9dbdfa0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b7ab12339a702c80b7dfa493458f605 = $(`<div id="html_6b7ab12339a702c80b7dfa493458f605" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Mubarak Village nearshore (MV-2)<br>         <b>Species:</b> Dinoflagellates (Phytoplankton)<br>         <b>Count:</b> 115.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_b0197018a81ee1a22d3df1d2d9dbdfa0.setContent(html_6b7ab12339a702c80b7dfa493458f605);
+            
+        
+
+        marker_ed3d5db26f354276512474cb311c1327.bindPopup(popup_b0197018a81ee1a22d3df1d2d9dbdfa0)
+        ;
+
+        
+    
+    
+            marker_ed3d5db26f354276512474cb311c1327.bindTooltip(
+                `<div>
+                     Mubarak Village nearshore (MV-2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_989b9b001ba5d64d97a80603039e16aa = L.marker(
+                [24.869, 66.757],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_4ccf000c704d8830ce8a845dc5276bea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d2902de954e3e5c5fc623572f397eb9 = $(`<div id="html_2d2902de954e3e5c5fc623572f397eb9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Mubarak Village offshore (MV-1)<br>         <b>Species:</b> All Dinoflagellates<br>         <b>Count:</b> 105.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_4ccf000c704d8830ce8a845dc5276bea.setContent(html_2d2902de954e3e5c5fc623572f397eb9);
+            
+        
+
+        marker_989b9b001ba5d64d97a80603039e16aa.bindPopup(popup_4ccf000c704d8830ce8a845dc5276bea)
+        ;
+
+        
+    
+    
+            marker_989b9b001ba5d64d97a80603039e16aa.bindTooltip(
+                `<div>
+                     Mubarak Village offshore (MV-1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09591251664e882afc79e1ab248ef608 = L.marker(
+                [24.869, 66.757],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_e7c046bdccbef69306edcfe014c8cd8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afaafb573bceb3d1241ccbfdb2337bea = $(`<div id="html_afaafb573bceb3d1241ccbfdb2337bea" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Mubarak Village offshore (MV-1)<br>         <b>Species:</b> Dinoflagellates (Phytoplankton)<br>         <b>Count:</b> 105.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Distribution and abundance of dinoflagellates from the coastal waters of Karachi, Pakistan, northern part of the Arabian Sea</em>     </div>     </div>`)[0];
+                popup_e7c046bdccbef69306edcfe014c8cd8e.setContent(html_afaafb573bceb3d1241ccbfdb2337bea);
+            
+        
+
+        marker_09591251664e882afc79e1ab248ef608.bindPopup(popup_e7c046bdccbef69306edcfe014c8cd8e)
+        ;
+
+        
+    
+    
+            marker_09591251664e882afc79e1ab248ef608.bindTooltip(
+                `<div>
+                     Mubarak Village offshore (MV-1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a3a327656fe890fcdbfa7fd79458c4cf = L.marker(
+                [34.075, 73.407],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9ee0e41d677b47757d9124b7d1e40806 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efbb915b6b15a58de2ba88e4ebba4ea1 = $(`<div id="html_efbb915b6b15a58de2ba88e4ebba4ea1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Nathiagali<br>         <b>Species:</b> Bivalves<br>         <b>Count:</b> 6.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_9ee0e41d677b47757d9124b7d1e40806.setContent(html_efbb915b6b15a58de2ba88e4ebba4ea1);
+            
+        
+
+        marker_a3a327656fe890fcdbfa7fd79458c4cf.bindPopup(popup_9ee0e41d677b47757d9124b7d1e40806)
+        ;
+
+        
+    
+    
+            marker_a3a327656fe890fcdbfa7fd79458c4cf.bindTooltip(
+                `<div>
+                     Nathiagali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f3d44467c0bd868a8391be14be36b31c = L.marker(
+                [34.075, 73.407],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c39ad779f222656951435e5986020fb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c296fde1f340d205a0c4c4d85f8c437c = $(`<div id="html_c296fde1f340d205a0c4c4d85f8c437c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Nathiagali<br>         <b>Species:</b> Gastropods (Dominant Category)<br>         <b>Count:</b> 47.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_c39ad779f222656951435e5986020fb4.setContent(html_c296fde1f340d205a0c4c4d85f8c437c);
+            
+        
+
+        marker_f3d44467c0bd868a8391be14be36b31c.bindPopup(popup_c39ad779f222656951435e5986020fb4)
+        ;
+
+        
+    
+    
+            marker_f3d44467c0bd868a8391be14be36b31c.bindTooltip(
+                `<div>
+                     Nathiagali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1fd06a27fa79ed00bfe87220015c169 = L.marker(
+                [34.075, 73.407],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9bf2bf47fbbcc4a1cbcea029c53160c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a61a71866462074557f9c268a7d9008 = $(`<div id="html_4a61a71866462074557f9c268a7d9008" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Nathiagali<br>         <b>Species:</b> Total Molluscs<br>         <b>Count:</b> 55.0<br>         <b>Year:</b> 1993<br>         <b>Study:</b> <em>DIVERSITY OF BENTHIC MACROMOLLUSCAN COMMUNITIES ON THE ROCKY SHORES OF KARACHI COAST</em>     </div>     </div>`)[0];
+                popup_9bf2bf47fbbcc4a1cbcea029c53160c5.setContent(html_4a61a71866462074557f9c268a7d9008);
+            
+        
+
+        marker_a1fd06a27fa79ed00bfe87220015c169.bindPopup(popup_9bf2bf47fbbcc4a1cbcea029c53160c5)
+        ;
+
+        
+    
+    
+            marker_a1fd06a27fa79ed00bfe87220015c169.bindTooltip(
+                `<div>
+                     Nathiagali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_edb000b667aa3f57720ef7b64cf97718 = L.marker(
+                [24.818, 66.953],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_b6f53700476c551bbc8172fb4451e7a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_650248ef9f0b8bf4746b4d6eab05f35a = $(`<div id="html_650248ef9f0b8bf4746b4d6eab05f35a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Nesting Beaches<br>         <b>Species:</b> Marine Turtles<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Conservation and management of biodiversity in Pakistan through the establishment of marine protected areas</em>     </div>     </div>`)[0];
+                popup_b6f53700476c551bbc8172fb4451e7a8.setContent(html_650248ef9f0b8bf4746b4d6eab05f35a);
+            
+        
+
+        marker_edb000b667aa3f57720ef7b64cf97718.bindPopup(popup_b6f53700476c551bbc8172fb4451e7a8)
+        ;
+
+        
+    
+    
+            marker_edb000b667aa3f57720ef7b64cf97718.bindTooltip(
+                `<div>
+                     Nesting Beaches
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8ccc1909887044d8674be3ea49c7ba97 = L.marker(
+                [24.852, 66.92],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_f0292fc07e4c97725850fd2d474c9818 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4ed7d284cef4d3e799c6fe041c0f701 = $(`<div id="html_a4ed7d284cef4d3e799c6fe041c0f701" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Paradise Point<br>         <b>Species:</b> Green Seaweeds<br>         <b>Count:</b> 10.0<br>         <b>Year:</b> 2009<br>         <b>Study:</b> <em>Diversity of Green Seaweeds along the Coast of Karachi</em>     </div>     </div>`)[0];
+                popup_f0292fc07e4c97725850fd2d474c9818.setContent(html_a4ed7d284cef4d3e799c6fe041c0f701);
+            
+        
+
+        marker_8ccc1909887044d8674be3ea49c7ba97.bindPopup(popup_f0292fc07e4c97725850fd2d474c9818)
+        ;
+
+        
+    
+    
+            marker_8ccc1909887044d8674be3ea49c7ba97.bindTooltip(
+                `<div>
+                     Paradise Point
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4aca4a69e4fa0d909e69f7284acd312f = L.marker(
+                [24.873, 66.643],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c8a95a3220abe83fd25a99bdfa2877e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94654a3da9213e66458374e8c5b36f01 = $(`<div id="html_94654a3da9213e66458374e8c5b36f01" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Reef habitat along Churna Island<br>         <b>Species:</b> Coral-Associated Fish Species<br>         <b>Count:</b> 58.0<br>         <b>Year:</b> 2021<br>         <b>Study:</b> <em>Coral reefs of Pakistan: a comprehensive review...</em>     </div>     </div>`)[0];
+                popup_c8a95a3220abe83fd25a99bdfa2877e5.setContent(html_94654a3da9213e66458374e8c5b36f01);
+            
+        
+
+        marker_4aca4a69e4fa0d909e69f7284acd312f.bindPopup(popup_c8a95a3220abe83fd25a99bdfa2877e5)
+        ;
+
+        
+    
+    
+            marker_4aca4a69e4fa0d909e69f7284acd312f.bindTooltip(
+                `<div>
+                     Reef habitat along Churna Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_319fdc776b9c6660267c7141dce621a7 = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5a1eab66707becab17e35e02fdbfa3bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a303ec8876b118f871b5a6b5449bb5aa = $(`<div id="html_a303ec8876b118f871b5a6b5449bb5aa" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Cyclotella Cf. Meneghiniana<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>PHYTOPLANKTON COMPOSITION IN A MANGROVE ECOSYSTEM AT SANDSPIT, KARACHI, PAKISTAN</em>     </div>     </div>`)[0];
+                popup_5a1eab66707becab17e35e02fdbfa3bf.setContent(html_a303ec8876b118f871b5a6b5449bb5aa);
+            
+        
+
+        marker_319fdc776b9c6660267c7141dce621a7.bindPopup(popup_5a1eab66707becab17e35e02fdbfa3bf)
+        ;
+
+        
+    
+    
+            marker_319fdc776b9c6660267c7141dce621a7.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a1f960958f7da70201d424801176cd0 = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_2c56c901071c1b7b837920f432b31dc1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf3dbde578fa8062518ef0a479d995c4 = $(`<div id="html_bf3dbde578fa8062518ef0a479d995c4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Cylindrotheca Closterium<br>         <b>Count:</b> 526.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>PHYTOPLANKTON COMPOSITION IN A MANGROVE ECOSYSTEM AT SANDSPIT, KARACHI, PAKISTAN</em>     </div>     </div>`)[0];
+                popup_2c56c901071c1b7b837920f432b31dc1.setContent(html_bf3dbde578fa8062518ef0a479d995c4);
+            
+        
+
+        marker_9a1f960958f7da70201d424801176cd0.bindPopup(popup_2c56c901071c1b7b837920f432b31dc1)
+        ;
+
+        
+    
+    
+            marker_9a1f960958f7da70201d424801176cd0.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f2e157cb01bf4c56aac281d82d9cdca = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_1f99ed3053cbb7ef4b34ebd203f2df41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_738583401a01c756491c92584556c733 = $(`<div id="html_738583401a01c756491c92584556c733" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Diatoms<br>         <b>Count:</b> 26.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>PHYTOPLANKTON COMPOSITION IN A MANGROVE ECOSYSTEM AT SANDSPIT, KARACHI, PAKISTAN</em>     </div>     </div>`)[0];
+                popup_1f99ed3053cbb7ef4b34ebd203f2df41.setContent(html_738583401a01c756491c92584556c733);
+            
+        
+
+        marker_2f2e157cb01bf4c56aac281d82d9cdca.bindPopup(popup_1f99ed3053cbb7ef4b34ebd203f2df41)
+        ;
+
+        
+    
+    
+            marker_2f2e157cb01bf4c56aac281d82d9cdca.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cca0ad547584b9ea7e7c0e03bbdc2785 = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9d9beaea8b2ad9f85af7136a0ede44e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81028e5bfa06b56513cc9cda54296d3b = $(`<div id="html_81028e5bfa06b56513cc9cda54296d3b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Dinoflagellates<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>PHYTOPLANKTON COMPOSITION IN A MANGROVE ECOSYSTEM AT SANDSPIT, KARACHI, PAKISTAN</em>     </div>     </div>`)[0];
+                popup_9d9beaea8b2ad9f85af7136a0ede44e2.setContent(html_81028e5bfa06b56513cc9cda54296d3b);
+            
+        
+
+        marker_cca0ad547584b9ea7e7c0e03bbdc2785.bindPopup(popup_9d9beaea8b2ad9f85af7136a0ede44e2)
+        ;
+
+        
+    
+    
+            marker_cca0ad547584b9ea7e7c0e03bbdc2785.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7d1a9abf67c452e9bae3bd86c41b0fde = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c69bb924145a43bb44a2eecba6191dc0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_52eba9bc68a395cae2caa0b565d2721f = $(`<div id="html_52eba9bc68a395cae2caa0b565d2721f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Phytoplankton (Total)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>PHYTOPLANKTON COMPOSITION IN A MANGROVE ECOSYSTEM AT SANDSPIT, KARACHI, PAKISTAN</em>     </div>     </div>`)[0];
+                popup_c69bb924145a43bb44a2eecba6191dc0.setContent(html_52eba9bc68a395cae2caa0b565d2721f);
+            
+        
+
+        marker_7d1a9abf67c452e9bae3bd86c41b0fde.bindPopup(popup_c69bb924145a43bb44a2eecba6191dc0)
+        ;
+
+        
+    
+    
+            marker_7d1a9abf67c452e9bae3bd86c41b0fde.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7799956be64a15253ee8257febcd99cc = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_3208afda4600504b3fed273d56b0bddd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fb411bc31000c640030e6c06d432eb2 = $(`<div id="html_3fb411bc31000c640030e6c06d432eb2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Macrobenthic Community<br>         <b>Count:</b> 662.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>Studies on the Factors Affecting the Macrobenthic Community Structure of the Exposed Sandy Beaches Near Karachi, Pakistan</em>     </div>     </div>`)[0];
+                popup_3208afda4600504b3fed273d56b0bddd.setContent(html_3fb411bc31000c640030e6c06d432eb2);
+            
+        
+
+        marker_7799956be64a15253ee8257febcd99cc.bindPopup(popup_3208afda4600504b3fed273d56b0bddd)
+        ;
+
+        
+    
+    
+            marker_7799956be64a15253ee8257febcd99cc.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60ff5b80e849cd6159e9af2c39ef6c0f = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_0912795304b656a8064e9bd15a1103a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d14c696725ea3c057a7bc6091f6e175 = $(`<div id="html_1d14c696725ea3c057a7bc6091f6e175" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Marine Algae<br>         <b>Count:</b> 24.0<br>         <b>Year:</b> 2020<br>         <b>Study:</b> <em>DISTRIBUTION AND DIVERSITY OF MARINE ALGAE OF SINDH COASTAL AREA: ALPHA, BETA AND GAMMA DIVERSITY</em>     </div>     </div>`)[0];
+                popup_0912795304b656a8064e9bd15a1103a0.setContent(html_1d14c696725ea3c057a7bc6091f6e175);
+            
+        
+
+        marker_60ff5b80e849cd6159e9af2c39ef6c0f.bindPopup(popup_0912795304b656a8064e9bd15a1103a0)
+        ;
+
+        
+    
+    
+            marker_60ff5b80e849cd6159e9af2c39ef6c0f.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_41f61a6cfaf732dbdb8f1cfdcd7bb0b0 = L.marker(
+                [24.809, 66.945],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_2404f36e8fe10b8ad5899e38f76b2647 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a1cb7ad213ef801f5e4a3b1e7c1df88 = $(`<div id="html_3a1cb7ad213ef801f5e4a3b1e7c1df88" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit (Karachi)<br>         <b>Species:</b> Chthamalus Malayensis<br>         <b>Count:</b> 8.0<br>         <b>Year:</b> 2022<br>         <b>Study:</b> <em>COMPARATIVE BIOECOLOGICAL CHARACTERIZATION OF CHTHAMALUS MALAYENSIS FOUND AT SANDSPIT AND HAWKSBAY BEACHES, KARACHI</em>     </div>     </div>`)[0];
+                popup_2404f36e8fe10b8ad5899e38f76b2647.setContent(html_3a1cb7ad213ef801f5e4a3b1e7c1df88);
+            
+        
+
+        marker_41f61a6cfaf732dbdb8f1cfdcd7bb0b0.bindPopup(popup_2404f36e8fe10b8ad5899e38f76b2647)
+        ;
+
+        
+    
+    
+            marker_41f61a6cfaf732dbdb8f1cfdcd7bb0b0.bindTooltip(
+                `<div>
+                     Sandspit (Karachi)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1ea8cc3758dce8a8ec96edfb3dcac772 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_db896431fa428aa5a123f4fb00cb1308 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a581c3abcde7ff6c662ebebe5b245692 = $(`<div id="html_a581c3abcde7ff6c662ebebe5b245692" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit & Hawksbay<br>         <b>Species:</b> Crustacea<br>         <b>Count:</b> 327.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>Studies on the Factors Affecting the Macrobenthic Community Structure of the Exposed Sandy Beaches Near Karachi, Pakistan</em>     </div>     </div>`)[0];
+                popup_db896431fa428aa5a123f4fb00cb1308.setContent(html_a581c3abcde7ff6c662ebebe5b245692);
+            
+        
+
+        marker_1ea8cc3758dce8a8ec96edfb3dcac772.bindPopup(popup_db896431fa428aa5a123f4fb00cb1308)
+        ;
+
+        
+    
+    
+            marker_1ea8cc3758dce8a8ec96edfb3dcac772.bindTooltip(
+                `<div>
+                     Sandspit & Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c23e1e35ea9a13ac5277651c64bacca0 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_865900084e26c8875cb3900af0af0a83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8b7030608600ded357a5916a2d588cb = $(`<div id="html_b8b7030608600ded357a5916a2d588cb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit & Hawksbay<br>         <b>Species:</b> Polychaeta<br>         <b>Count:</b> 575.0<br>         <b>Year:</b> 2013<br>         <b>Study:</b> <em>Studies on the Factors Affecting the Macrobenthic Community Structure of the Exposed Sandy Beaches Near Karachi, Pakistan</em>     </div>     </div>`)[0];
+                popup_865900084e26c8875cb3900af0af0a83.setContent(html_b8b7030608600ded357a5916a2d588cb);
+            
+        
+
+        marker_c23e1e35ea9a13ac5277651c64bacca0.bindPopup(popup_865900084e26c8875cb3900af0af0a83)
+        ;
+
+        
+    
+    
+            marker_c23e1e35ea9a13ac5277651c64bacca0.bindTooltip(
+                `<div>
+                     Sandspit & Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_80a754a5d0212732470a54623ba202d7 = L.marker(
+                [24.8, 66.93],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5d6f40ec32c1e1c32491742af5858637 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afd1db282f7ab7ec1e9c932152ce92ff = $(`<div id="html_afd1db282f7ab7ec1e9c932152ce92ff" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Backwater<br>         <b>Species:</b> Diatom (Navicula Cancellata)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 1992<br>         <b>Study:</b> <em>F. Chagtai, and S.M. Saifullah (1992)</em>     </div>     </div>`)[0];
+                popup_5d6f40ec32c1e1c32491742af5858637.setContent(html_afd1db282f7ab7ec1e9c932152ce92ff);
+            
+        
+
+        marker_80a754a5d0212732470a54623ba202d7.bindPopup(popup_5d6f40ec32c1e1c32491742af5858637)
+        ;
+
+        
+    
+    
+            marker_80a754a5d0212732470a54623ba202d7.bindTooltip(
+                `<div>
+                     Sandspit Backwater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_33451b9134c305fdd8e62448646b618e = L.marker(
+                [24.8, 66.93],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_0b4e10aca3e057ac34b12ce275990187 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6be3e71bebd34a92df67c5fae645b2e7 = $(`<div id="html_6be3e71bebd34a92df67c5fae645b2e7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Backwater<br>         <b>Species:</b> Navicula Cancellata (Diatom)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 1992<br>         <b>Study:</b> <em>F. Chagtai, and S.M. Saifullah (1992)</em>     </div>     </div>`)[0];
+                popup_0b4e10aca3e057ac34b12ce275990187.setContent(html_6be3e71bebd34a92df67c5fae645b2e7);
+            
+        
+
+        marker_33451b9134c305fdd8e62448646b618e.bindPopup(popup_0b4e10aca3e057ac34b12ce275990187)
+        ;
+
+        
+    
+    
+            marker_33451b9134c305fdd8e62448646b618e.bindTooltip(
+                `<div>
+                     Sandspit Backwater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d3a25c79e5c34e62b5d0c38064352edc = L.marker(
+                [24.8, 66.93],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_b80677b3cb7486a48c12f776f47d982c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30f5fa3105be1fc6605d374cf90140d8 = $(`<div id="html_30f5fa3105be1fc6605d374cf90140d8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Backwater<br>         <b>Species:</b> Jellyfish Medusae (Chiropsalmus & Catostylus)<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2006<br>         <b>Study:</b> <em>New records of two jellyfish medusa (Cnidaria: Scyphozoa: Catostylidae; Cubozoa: Chirodropidae) from Pakistani waters...</em>     </div>     </div>`)[0];
+                popup_b80677b3cb7486a48c12f776f47d982c.setContent(html_30f5fa3105be1fc6605d374cf90140d8);
+            
+        
+
+        marker_d3a25c79e5c34e62b5d0c38064352edc.bindPopup(popup_b80677b3cb7486a48c12f776f47d982c)
+        ;
+
+        
+    
+    
+            marker_d3a25c79e5c34e62b5d0c38064352edc.bindTooltip(
+                `<div>
+                     Sandspit Backwater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8fbcd4d68481298da4e9c428020d3522 = L.marker(
+                [24.8, 66.93],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_538dbfeec4044e4f955ed9268e495e4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_815fbf8d0b2ce87ebcbf7de60c55503b = $(`<div id="html_815fbf8d0b2ce87ebcbf7de60c55503b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Backwater<br>         <b>Species:</b> Amphipod (Grandidierella Trispinosa)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Hala Bano, Quddusi Bashir Kazmi (2008)</em>     </div>     </div>`)[0];
+                popup_538dbfeec4044e4f955ed9268e495e4f.setContent(html_815fbf8d0b2ce87ebcbf7de60c55503b);
+            
+        
+
+        marker_8fbcd4d68481298da4e9c428020d3522.bindPopup(popup_538dbfeec4044e4f955ed9268e495e4f)
+        ;
+
+        
+    
+    
+            marker_8fbcd4d68481298da4e9c428020d3522.bindTooltip(
+                `<div>
+                     Sandspit Backwater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b9e4d6012a5e5730d44a1e0fb3a6b9f7 = L.marker(
+                [24.8, 66.93],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_7cef777d851e93608a0361cb4debfa38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fe248bef4358d602e164ff4a45add5e = $(`<div id="html_9fe248bef4358d602e164ff4a45add5e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Backwater<br>         <b>Species:</b> Grandidierella Trispinosa (Amphipod)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Hala Bano, Quddusi Bashir Kazmi (2008)</em>     </div>     </div>`)[0];
+                popup_7cef777d851e93608a0361cb4debfa38.setContent(html_9fe248bef4358d602e164ff4a45add5e);
+            
+        
+
+        marker_b9e4d6012a5e5730d44a1e0fb3a6b9f7.bindPopup(popup_7cef777d851e93608a0361cb4debfa38)
+        ;
+
+        
+    
+    
+            marker_b9e4d6012a5e5730d44a1e0fb3a6b9f7.bindTooltip(
+                `<div>
+                     Sandspit Backwater
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_881060d7ce117e5234b52cb595200222 = L.marker(
+                [24.808, 66.953],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5e0cb60e4837d8930dc7dc184d9f6cfd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aac35a45b2dc6eb9899cd10834b7ba95 = $(`<div id="html_aac35a45b2dc6eb9899cd10834b7ba95" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Beach<br>         <b>Species:</b> Diodontolaimus Karachiensis (Nematode)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2004<br>         <b>Study:</b> <em>Nasira, Shahina and Kamran (2004)</em>     </div>     </div>`)[0];
+                popup_5e0cb60e4837d8930dc7dc184d9f6cfd.setContent(html_aac35a45b2dc6eb9899cd10834b7ba95);
+            
+        
+
+        marker_881060d7ce117e5234b52cb595200222.bindPopup(popup_5e0cb60e4837d8930dc7dc184d9f6cfd)
+        ;
+
+        
+    
+    
+            marker_881060d7ce117e5234b52cb595200222.bindTooltip(
+                `<div>
+                     Sandspit Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_41d9ad9e599c8143b88777be5705133e = L.marker(
+                [24.808, 66.953],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_25d489a007e5d7aa9fc309dea7dd2976 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5bcfc1a0a88ff5891f4c5268094632a = $(`<div id="html_e5bcfc1a0a88ff5891f4c5268094632a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Beach<br>         <b>Species:</b> Nematode (Diodontolaimus Karachiensis)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2004<br>         <b>Study:</b> <em>Nasira, Shahina and Kamran (2004)</em>     </div>     </div>`)[0];
+                popup_25d489a007e5d7aa9fc309dea7dd2976.setContent(html_e5bcfc1a0a88ff5891f4c5268094632a);
+            
+        
+
+        marker_41d9ad9e599c8143b88777be5705133e.bindPopup(popup_25d489a007e5d7aa9fc309dea7dd2976)
+        ;
+
+        
+    
+    
+            marker_41d9ad9e599c8143b88777be5705133e.bindTooltip(
+                `<div>
+                     Sandspit Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d05f2d3c767cf822c98c763e83cbc7f = L.marker(
+                [24.808, 66.953],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_af8ca25a27c27dd162cd0c83781aee2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5f30a57d4b7a0678e792184a1472c05 = $(`<div id="html_d5f30a57d4b7a0678e792184a1472c05" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Beach<br>         <b>Species:</b> Diodontolaimus Karachiensis<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2005<br>         <b>Study:</b> <em>Description of Diodontolaimus karachiensis n. sp. (Chromadorida: Leptolaimidae) from Arabian Sea. Pak. J. Nematology 2005</em>     </div>     </div>`)[0];
+                popup_af8ca25a27c27dd162cd0c83781aee2b.setContent(html_d5f30a57d4b7a0678e792184a1472c05);
+            
+        
+
+        marker_8d05f2d3c767cf822c98c763e83cbc7f.bindPopup(popup_af8ca25a27c27dd162cd0c83781aee2b)
+        ;
+
+        
+    
+    
+            marker_8d05f2d3c767cf822c98c763e83cbc7f.bindTooltip(
+                `<div>
+                     Sandspit Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_41698c3edd2bdaa5388c1fef702851a8 = L.marker(
+                [24.808, 66.953],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_7075803ceb794c99aa18b06fd227fccf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23329e35d1e04e6bcda231ec79c37a66 = $(`<div id="html_23329e35d1e04e6bcda231ec79c37a66" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Beach<br>         <b>Species:</b> Free-Living Marine Nematodes<br>         <b>Count:</b> 4.0<br>         <b>Year:</b> 2007<br>         <b>Study:</b> <em>Nasira K, Kamran, M.K, Shahina, F (2007)</em>     </div>     </div>`)[0];
+                popup_7075803ceb794c99aa18b06fd227fccf.setContent(html_23329e35d1e04e6bcda231ec79c37a66);
+            
+        
+
+        marker_41698c3edd2bdaa5388c1fef702851a8.bindPopup(popup_7075803ceb794c99aa18b06fd227fccf)
+        ;
+
+        
+    
+    
+            marker_41698c3edd2bdaa5388c1fef702851a8.bindTooltip(
+                `<div>
+                     Sandspit Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7c3894d1dfe4bd1f8420288e22182521 = L.marker(
+                [24.808, 66.953],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5f89c407161fa7c5329ff8f2855a3e43 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c432d4242a2eec8aa5cbddc79cb14171 = $(`<div id="html_c432d4242a2eec8aa5cbddc79cb14171" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit Beach<br>         <b>Species:</b> Plastic Debris Categories<br>         <b>Count:</b> 8.0<br>         <b>Year:</b> 2023<br>         <b>Study:</b> <em>Composition and relative abundance of plastic debris along Manora and Sandspit beaches, Karachi, Pakistan</em>     </div>     </div>`)[0];
+                popup_5f89c407161fa7c5329ff8f2855a3e43.setContent(html_c432d4242a2eec8aa5cbddc79cb14171);
+            
+        
+
+        marker_7c3894d1dfe4bd1f8420288e22182521.bindPopup(popup_5f89c407161fa7c5329ff8f2855a3e43)
+        ;
+
+        
+    
+    
+            marker_7c3894d1dfe4bd1f8420288e22182521.bindTooltip(
+                `<div>
+                     Sandspit Beach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_50ed79f7c250c10e321329a0d28d5012 = L.marker(
+                [24.81, 66.94],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_099b20057238ea94c097846de918f92f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b74e6c2b60a8e6f29b6cdf6d5c4fc28 = $(`<div id="html_1b74e6c2b60a8e6f29b6cdf6d5c4fc28" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit intertidal zone near Kakka village<br>         <b>Species:</b> Free-Living Marine Nematodes (New Spp.)<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2007<br>         <b>Study:</b> <em>Two new species of free-living nematodes of the family Cyatholaimidae (Nematoda: Chromadorida) from Arabian Sea of Pakistan...</em>     </div>     </div>`)[0];
+                popup_099b20057238ea94c097846de918f92f.setContent(html_1b74e6c2b60a8e6f29b6cdf6d5c4fc28);
+            
+        
+
+        marker_50ed79f7c250c10e321329a0d28d5012.bindPopup(popup_099b20057238ea94c097846de918f92f)
+        ;
+
+        
+    
+    
+            marker_50ed79f7c250c10e321329a0d28d5012.bindTooltip(
+                `<div>
+                     Sandspit intertidal zone near Kakka village
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_409385b577a81f83f10631a1e35163c8 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_56ffc139ffbc057ddc5ec034021b3197 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8baaebcba43a0705327c604f32bd14e5 = $(`<div id="html_8baaebcba43a0705327c604f32bd14e5" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawks Bay coastal wetland complex<br>         <b>Species:</b> Birds (All Species Recorded)<br>         <b>Count:</b> 114.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Observations on the birds of Sandspit/Hawkesbay coastal wetland complex Karachi coast (J. Durrani et al., 2008)</em>     </div>     </div>`)[0];
+                popup_56ffc139ffbc057ddc5ec034021b3197.setContent(html_8baaebcba43a0705327c604f32bd14e5);
+            
+        
+
+        marker_409385b577a81f83f10631a1e35163c8.bindPopup(popup_56ffc139ffbc057ddc5ec034021b3197)
+        ;
+
+        
+    
+    
+            marker_409385b577a81f83f10631a1e35163c8.bindTooltip(
+                `<div>
+                     Sandspit/Hawks Bay coastal wetland complex
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a98fc65f84d5f93c675c44e00d155b8 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_69b51e8c349a616e3e6b5789caf17c0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18776003f4044614692ae43aa770e6a0 = $(`<div id="html_18776003f4044614692ae43aa770e6a0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawks Bay coastal wetland complex<br>         <b>Species:</b> Winter-Visitor Birds<br>         <b>Count:</b> 66.0<br>         <b>Year:</b> 2008<br>         <b>Study:</b> <em>Observations on the birds of Sandspit/Hawkesbay coastal wetland complex Karachi coast (J. Durrani et al., 2008)</em>     </div>     </div>`)[0];
+                popup_69b51e8c349a616e3e6b5789caf17c0a.setContent(html_18776003f4044614692ae43aa770e6a0);
+            
+        
+
+        marker_8a98fc65f84d5f93c675c44e00d155b8.bindPopup(popup_69b51e8c349a616e3e6b5789caf17c0a)
+        ;
+
+        
+    
+    
+            marker_8a98fc65f84d5f93c675c44e00d155b8.bindTooltip(
+                `<div>
+                     Sandspit/Hawks Bay coastal wetland complex
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66bbc4a41109e4d8603f93ce4c5fa60b = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_00d78889e15b367a5c95a8209c1471c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f7c93c885394fdfe9268ba7ce846cbb = $(`<div id="html_1f7c93c885394fdfe9268ba7ce846cbb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Birds (Migratory & Resident)<br>         <b>Count:</b> 114.0<br>         <b>Year:</b> 2004<br>         <b>Study:</b> <em>J. Durrani et al (2004)</em>     </div>     </div>`)[0];
+                popup_00d78889e15b367a5c95a8209c1471c1.setContent(html_1f7c93c885394fdfe9268ba7ce846cbb);
+            
+        
+
+        marker_66bbc4a41109e4d8603f93ce4c5fa60b.bindPopup(popup_00d78889e15b367a5c95a8209c1471c1)
+        ;
+
+        
+    
+    
+            marker_66bbc4a41109e4d8603f93ce4c5fa60b.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d2e6407710e7ec71ac1c508b6fe2b179 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_a8ffe6480918069f340696024b828a08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4758803d99277619e4e02c0914162ff2 = $(`<div id="html_4758803d99277619e4e02c0914162ff2" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Birds (Migratory And Resident)<br>         <b>Count:</b> 114.0<br>         <b>Year:</b> 2004<br>         <b>Study:</b> <em>J. Durrani et al (2004)</em>     </div>     </div>`)[0];
+                popup_a8ffe6480918069f340696024b828a08.setContent(html_4758803d99277619e4e02c0914162ff2);
+            
+        
+
+        marker_d2e6407710e7ec71ac1c508b6fe2b179.bindPopup(popup_a8ffe6480918069f340696024b828a08)
+        ;
+
+        
+    
+    
+            marker_d2e6407710e7ec71ac1c508b6fe2b179.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_47f4ec0a84b4be94c50ab1957fa18a6c = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_1ea9af76de2b4f5b61807432334f435b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a69a53e10bf0a89a4b5b205a94026646 = $(`<div id="html_a69a53e10bf0a89a4b5b205a94026646" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Cetaceans (Humpback Dolphins, Common Dolphins, Finless Porpoise)<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2005<br>         <b>Study:</b> <em>Collins et al (2005)</em>     </div>     </div>`)[0];
+                popup_1ea9af76de2b4f5b61807432334f435b.setContent(html_a69a53e10bf0a89a4b5b205a94026646);
+            
+        
+
+        marker_47f4ec0a84b4be94c50ab1957fa18a6c.bindPopup(popup_1ea9af76de2b4f5b61807432334f435b)
+        ;
+
+        
+    
+    
+            marker_47f4ec0a84b4be94c50ab1957fa18a6c.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d053a0b3f66ad47b662faa78c2857131 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c44de8ddb6ce1b4abad8d6907c185da1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fedb4697e09c6ec1bf5c65b032b1917 = $(`<div id="html_8fedb4697e09c6ec1bf5c65b032b1917" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Catostylus Mosaicus (Jellyfish)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2006<br>         <b>Study:</b> <em>Q. Tahera, and Q.B. Kazmi (2006)</em>     </div>     </div>`)[0];
+                popup_c44de8ddb6ce1b4abad8d6907c185da1.setContent(html_8fedb4697e09c6ec1bf5c65b032b1917);
+            
+        
+
+        marker_d053a0b3f66ad47b662faa78c2857131.bindPopup(popup_c44de8ddb6ce1b4abad8d6907c185da1)
+        ;
+
+        
+    
+    
+            marker_d053a0b3f66ad47b662faa78c2857131.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09833e028aebbfc28c779ab5d5ee350e = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_5d3462f75379ae7a47792aa00ce99226 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0739c1e309e20ad37227a2c81e18f043 = $(`<div id="html_0739c1e309e20ad37227a2c81e18f043" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Chiropsalmus Butiendijki (Jellyfish)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2006<br>         <b>Study:</b> <em>Q. Tahera, and Q.B. Kazmi (2006)</em>     </div>     </div>`)[0];
+                popup_5d3462f75379ae7a47792aa00ce99226.setContent(html_0739c1e309e20ad37227a2c81e18f043);
+            
+        
+
+        marker_09833e028aebbfc28c779ab5d5ee350e.bindPopup(popup_5d3462f75379ae7a47792aa00ce99226)
+        ;
+
+        
+    
+    
+            marker_09833e028aebbfc28c779ab5d5ee350e.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b78ee74253668b8589b9ea3357c8ab5a = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_63584fcc494fbad8680050cf002f38ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dde2249d5590793d7711c8288e2eac43 = $(`<div id="html_dde2249d5590793d7711c8288e2eac43" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Jellyfish (Catostylus Mosaicus)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2006<br>         <b>Study:</b> <em>Q. Tahera, and Q.B. Kazmi (2006)</em>     </div>     </div>`)[0];
+                popup_63584fcc494fbad8680050cf002f38ef.setContent(html_dde2249d5590793d7711c8288e2eac43);
+            
+        
+
+        marker_b78ee74253668b8589b9ea3357c8ab5a.bindPopup(popup_63584fcc494fbad8680050cf002f38ef)
+        ;
+
+        
+    
+    
+            marker_b78ee74253668b8589b9ea3357c8ab5a.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2ca8bd07cd93a16523cb8f1ec7666e2e = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9124ce8513879de93a80a0363fd24355 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a2bed01da3d5b6e37c783f5656883da = $(`<div id="html_4a2bed01da3d5b6e37c783f5656883da" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Jellyfish (Chiropsalmus Butiendijki)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2006<br>         <b>Study:</b> <em>Q. Tahera, and Q.B. Kazmi (2006)</em>     </div>     </div>`)[0];
+                popup_9124ce8513879de93a80a0363fd24355.setContent(html_4a2bed01da3d5b6e37c783f5656883da);
+            
+        
+
+        marker_2ca8bd07cd93a16523cb8f1ec7666e2e.bindPopup(popup_9124ce8513879de93a80a0363fd24355)
+        ;
+
+        
+    
+    
+            marker_2ca8bd07cd93a16523cb8f1ec7666e2e.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e594a7af64541a0ca88aa3cefa73fab1 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_7663de5903c82e1a28754e398be2db15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af30d017be5f0fcb6124d91fc6b632f1 = $(`<div id="html_af30d017be5f0fcb6124d91fc6b632f1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Reptiles (Lizards, Snakes, Etc.)<br>         <b>Count:</b> 27.0<br>         <b>Year:</b> 2010<br>         <b>Study:</b> <em>Khan et al (2010)</em>     </div>     </div>`)[0];
+                popup_7663de5903c82e1a28754e398be2db15.setContent(html_af30d017be5f0fcb6124d91fc6b632f1);
+            
+        
+
+        marker_e594a7af64541a0ca88aa3cefa73fab1.bindPopup(popup_7663de5903c82e1a28754e398be2db15)
+        ;
+
+        
+    
+    
+            marker_e594a7af64541a0ca88aa3cefa73fab1.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9660755ff51c4cd1703bfbfcfa4bb283 = L.marker(
+                [24.819, 66.949],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_c86c64dc3c24e1fe747510612a483f02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00ce7342524dfda71c0dd097e3aec738 = $(`<div id="html_00ce7342524dfda71c0dd097e3aec738" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sandspit/Hawksbay<br>         <b>Species:</b> Reptiles (Lizards, Snakes)<br>         <b>Count:</b> 27.0<br>         <b>Year:</b> 2010<br>         <b>Study:</b> <em>Khan et al (2010)</em>     </div>     </div>`)[0];
+                popup_c86c64dc3c24e1fe747510612a483f02.setContent(html_00ce7342524dfda71c0dd097e3aec738);
+            
+        
+
+        marker_9660755ff51c4cd1703bfbfcfa4bb283.bindPopup(popup_c86c64dc3c24e1fe747510612a483f02)
+        ;
+
+        
+    
+    
+            marker_9660755ff51c4cd1703bfbfcfa4bb283.bindTooltip(
+                `<div>
+                     Sandspit/Hawksbay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d12c8901b36234d2b5b7b48b03f0557c = L.marker(
+                [25.04, 61.76],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_e1f9bf2804ca5cbabcd5e851a465d7a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da2862f56dbc10c68b14c81dfe3b9527 = $(`<div id="html_da2862f56dbc10c68b14c81dfe3b9527" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Station II (Rocky Bottom)<br>         <b>Species:</b> Total (St-Ii)<br>         <b>Count:</b> 31.0<br>         <b>Year:</b> 2014<br>         <b>Study:</b> <em>Quantitative Analysis of Macrobenthic Molluscan Populations Inhabiting Bandri Area of Jiwani, South West Pakistan Coast</em>     </div>     </div>`)[0];
+                popup_e1f9bf2804ca5cbabcd5e851a465d7a1.setContent(html_da2862f56dbc10c68b14c81dfe3b9527);
+            
+        
+
+        marker_d12c8901b36234d2b5b7b48b03f0557c.bindPopup(popup_e1f9bf2804ca5cbabcd5e851a465d7a1)
+        ;
+
+        
+    
+    
+            marker_d12c8901b36234d2b5b7b48b03f0557c.bindTooltip(
+                `<div>
+                     Station II (Rocky Bottom)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30f65ce49446fd4131ef7a05b008d690 = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_67b6e859e4647f3e72c492c8e3010df8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a38a38702651fa64914c268a450a7cb6 = $(`<div id="html_a38a38702651fa64914c268a450a7cb6" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Annelida<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_67b6e859e4647f3e72c492c8e3010df8.setContent(html_a38a38702651fa64914c268a450a7cb6);
+            
+        
+
+        marker_30f65ce49446fd4131ef7a05b008d690.bindPopup(popup_67b6e859e4647f3e72c492c8e3010df8)
+        ;
+
+        
+    
+    
+            marker_30f65ce49446fd4131ef7a05b008d690.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a003cb3b53701771b9eed8314fbd79c = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_b9019caead50d26817d79e1f33b0a1a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_623cf42c03b3a258a41fe3d53972ae1f = $(`<div id="html_623cf42c03b3a258a41fe3d53972ae1f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Arthropoda<br>         <b>Count:</b> 24.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_b9019caead50d26817d79e1f33b0a1a3.setContent(html_623cf42c03b3a258a41fe3d53972ae1f);
+            
+        
+
+        marker_9a003cb3b53701771b9eed8314fbd79c.bindPopup(popup_b9019caead50d26817d79e1f33b0a1a3)
+        ;
+
+        
+    
+    
+            marker_9a003cb3b53701771b9eed8314fbd79c.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_da5bb84fd10878f284408170743c567f = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_4a6c7898b920bb8771f49ce0f5b91774 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ab26d26de0fddb8ab7ce8713c8b45f4 = $(`<div id="html_5ab26d26de0fddb8ab7ce8713c8b45f4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Ascidiacea (Colony)<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_4a6c7898b920bb8771f49ce0f5b91774.setContent(html_5ab26d26de0fddb8ab7ce8713c8b45f4);
+            
+        
+
+        marker_da5bb84fd10878f284408170743c567f.bindPopup(popup_4a6c7898b920bb8771f49ce0f5b91774)
+        ;
+
+        
+    
+    
+            marker_da5bb84fd10878f284408170743c567f.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bfd4aad1a47b716d99654716996017f4 = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_08ea6383fc21235177f8aed822ad7e1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9afad7e8851d1af05fc5c73d74b2e785 = $(`<div id="html_9afad7e8851d1af05fc5c73d74b2e785" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Cnidaria<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_08ea6383fc21235177f8aed822ad7e1c.setContent(html_9afad7e8851d1af05fc5c73d74b2e785);
+            
+        
+
+        marker_bfd4aad1a47b716d99654716996017f4.bindPopup(popup_08ea6383fc21235177f8aed822ad7e1c)
+        ;
+
+        
+    
+    
+            marker_bfd4aad1a47b716d99654716996017f4.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e72e888cb42e41893aca858aed1196ee = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_b963bb90a038f81e6ebc70f6d03d204c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf944d42f611cab2bb753582dfb9a799 = $(`<div id="html_cf944d42f611cab2bb753582dfb9a799" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Echinodermata<br>         <b>Count:</b> 12.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_b963bb90a038f81e6ebc70f6d03d204c.setContent(html_cf944d42f611cab2bb753582dfb9a799);
+            
+        
+
+        marker_e72e888cb42e41893aca858aed1196ee.bindPopup(popup_b963bb90a038f81e6ebc70f6d03d204c)
+        ;
+
+        
+    
+    
+            marker_e72e888cb42e41893aca858aed1196ee.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7bc5693a75c0d7957e6cfbeab8dabe5 = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_fcd01af3271d63c2b5b7322edc7638ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_523f6ddebbe45d682e8ef0ab14013a3a = $(`<div id="html_523f6ddebbe45d682e8ef0ab14013a3a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Mollusca<br>         <b>Count:</b> 36.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_fcd01af3271d63c2b5b7322edc7638ca.setContent(html_523f6ddebbe45d682e8ef0ab14013a3a);
+            
+        
+
+        marker_d7bc5693a75c0d7957e6cfbeab8dabe5.bindPopup(popup_fcd01af3271d63c2b5b7322edc7638ca)
+        ;
+
+        
+    
+    
+            marker_d7bc5693a75c0d7957e6cfbeab8dabe5.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_935e088f2f732b31c61bf289aaca5455 = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_4d569e095d2b5e82088d54fe5e33dc75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d458027c8cd9282c687bb91e0721762 = $(`<div id="html_7d458027c8cd9282c687bb91e0721762" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Nemertea<br>         <b>Count:</b> 1.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_4d569e095d2b5e82088d54fe5e33dc75.setContent(html_7d458027c8cd9282c687bb91e0721762);
+            
+        
+
+        marker_935e088f2f732b31c61bf289aaca5455.bindPopup(popup_4d569e095d2b5e82088d54fe5e33dc75)
+        ;
+
+        
+    
+    
+            marker_935e088f2f732b31c61bf289aaca5455.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_953593614d871c571c1da67b6546b499 = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_9da6aaac920a65b327cebc4cbb8adcfb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4ea78c6313fa4c4dfadc3c57a0864dfc = $(`<div id="html_4ea78c6313fa4c4dfadc3c57a0864dfc" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Pisces<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_9da6aaac920a65b327cebc4cbb8adcfb.setContent(html_4ea78c6313fa4c4dfadc3c57a0864dfc);
+            
+        
+
+        marker_953593614d871c571c1da67b6546b499.bindPopup(popup_9da6aaac920a65b327cebc4cbb8adcfb)
+        ;
+
+        
+    
+    
+            marker_953593614d871c571c1da67b6546b499.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_05393ec67883175c995c1fb7cce3fb94 = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_3ab4feddbb0afb82c745c021b512d6a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad23edfd684cb9b796f54a56de15bfde = $(`<div id="html_ad23edfd684cb9b796f54a56de15bfde" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Platyhelminthes<br>         <b>Count:</b> 3.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_3ab4feddbb0afb82c745c021b512d6a4.setContent(html_ad23edfd684cb9b796f54a56de15bfde);
+            
+        
+
+        marker_05393ec67883175c995c1fb7cce3fb94.bindPopup(popup_3ab4feddbb0afb82c745c021b512d6a4)
+        ;
+
+        
+    
+    
+            marker_05393ec67883175c995c1fb7cce3fb94.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09497e2023d6d9c91033aa34c1b0475a = L.marker(
+                [24.869, 66.868],
+                {
+}
+            ).addTo(marker_cluster_337da4daddfda775bf889c83690950e7);
+        
+    
+        var popup_81d63f4c72c22939045b2458108e1be9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1953c03fdc7522f21372df1eecf71148 = $(`<div id="html_1953c03fdc7522f21372df1eecf71148" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Arial; max-width: 300px;">         <b>Location:</b> Sunehri<br>         <b>Species:</b> Porifera<br>         <b>Count:</b> 2.0<br>         <b>Year:</b> 2017<br>         <b>Study:</b> <em>Community Structure and Seasonal Distribution of Intertidal Macrofauna from Two Rocky Shores of Karachi Coast</em>     </div>     </div>`)[0];
+                popup_81d63f4c72c22939045b2458108e1be9.setContent(html_1953c03fdc7522f21372df1eecf71148);
+            
+        
+
+        marker_09497e2023d6d9c91033aa34c1b0475a.bindPopup(popup_81d63f4c72c22939045b2458108e1be9)
+        ;
+
+        
+    
+    
+            marker_09497e2023d6d9c91033aa34c1b0475a.bindTooltip(
+                `<div>
+                     Sunehri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_337da4daddfda775bf889c83690950e7.addTo(map_eb8b0c2f97b473f23c03b697b01ac16d);
+        
+</script>
+</html>
